@@ -15,31 +15,82 @@
     justify-content: center;
 }
 
-nav {
+header {
+    height: 100px;
     width: 100%;
+    display: flexbox;
+    flex-direction: row;
+    background-color:  rgb(37, 37, 37);
+    align-items: center;
+    justify-content: center;
+}
+
+#icono_barras {
+    width: 20px;
+}
+
+.navbar {
+    transition: 200ms ease;
+    height: 100vh;
+    width: 12%;
+}
+
+.navbar .navbar_var {
+    display: none;
+    background-color: black;
+    transition: 200ms ease;
+}
+
+.navbar:hover .navbar_var{
+    display: block;
+
+}
+
+.navbar:hover {
+    background-color: black;
+}
+
+nav{
     position: absolute;
     top: 0;
     left: 0;
     padding: 15px 3%;
-    display: flex;
+    display: flexbox;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
 }
 
-nav .logo {
-    width: 100px;
-
-}
-
 nav ul li {
     list-style: none;
-    padding-bottom: 8px;
+    padding-bottom: 12%;
+    padding-top: 12%;
 }
 
 nav ul li a {
+    color: darkgrey;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.content a {
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+
+.content a:hover {
+    background-color: aliceblue;
+}
+
+
+
+nav ul li:hover {
+    background-color: aliceblue;
 }
 
 .bgvid {
@@ -47,6 +98,14 @@ nav ul li a {
     right: 0;
     bottom: 0;
     z-index: -1;
+}
+
+footer {
+    background-color: rgb(37, 37, 37);
+    color: rgb(208, 208, 208);
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 @media (min-aspect-ratio: 16/9){
@@ -60,4 +119,23 @@ nav ul li a {
         width: auto;
         height: 100%;
     }
+}
+
+
+.museo {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%
+}
+
+.museo .camioneta {
+    transition: 100ms ease;
+    max-width: 32%;
+    max-height: fit-content;
+}
+
+.camioneta:hover {
+    opacity: 0.3;
 }
