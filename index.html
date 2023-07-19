@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,44 +12,46 @@
 
 <body>
 
-    <div class="principal">
-        
-        <video autoplay muted loop id="myVideo" class="bgvid">
-            <source src="assets/MBVideo.mp4" type="video/mp4">
-        </video>
+<div class="container">
 
-        <nav class="navbar">
-            <img src="assets/barras.png" id="icono_barras"> <!-- cambiar por un vector -->
-                
-            <ul class="navbar_var" id="paginas_menu"> <!---->
-                
-                <li class="nav_item">
-                    <a href="#">Inicio</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">Vehículos</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">Quienes somos</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">Historia</a>
-                </li>
-                <li class="nav_item">
-                    <a href="https://ericksanchezp.github.io/museo">Museo</a>
-                </li>
-            </ul>
-            
-        </nav>
-        
-        <img src="assets/Logo.png" alt="Logo" class="logo">
-        <div class="content">
-            <h1>MB Design</h1>
-            <a href="#">Contacta un vendedor</a>
-        </div>
+    <video autoplay muted loop id="myVideo" class="bgvid">
+        <source src="assets/MBVideo.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar">
+        <img src="assets/three-bars.svg" id="bars-icon">
+
+        <ul class="navbar-list">
+
+        <li class="nav_item">
+            <a href="#">Inicio</a>
+        </li>
+        <li class="nav_item">
+            <a href="#">Vehículos</a>
+        </li>
+        <li class="nav_item">
+            <a href="#">Quienes somos</a>
+        </li>
+        <li class="nav_item">
+            <a href="#">Historia</a>
+        </li>
+        <li class="nav_item">
+            <a href="https://ericksanchezp.github.io/museo">Museo</a>
+        </li>
+        </ul>
+
+    </nav>
+
+    <img src="assets/Logo.png" alt="Logo-MBDesign" class="logo">
+
+    <div class="content">
+        <h1>MB Design</h1>
+        <a href="#">Contacta un vendedor</a>
+    </div>
+    
 </div>
 
-    <footer>
+<footer>
 
     <div class="foot-column">
         <p>Columna 1</p>
@@ -57,7 +60,7 @@
             <li><a>Contacto</a></li>
             <li><a>Legal</a></li>
         </ul>
-    
+
     </div>
 
     <div class="foot-column">
@@ -67,31 +70,31 @@
             <li><a>Lorem ipsum dolor sit amet </a></li>
             <li><a>Lorem ipsum dolor sit amet </a></li>
         </ul>
-    
+
     </div>
-        
-    </footer>
 
-
+</footer>
 
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-      
+
         // Your web app's Firebase configuration
         const firebaseConfig = {
-          apiKey: "AIzaSyAdXeP7jseYbT4utE0lnwisIoj555C2D14",
-          authDomain: "pruebafirebaseerick.firebaseapp.com",
-          projectId: "pruebafirebaseerick",
-          storageBucket: "pruebafirebaseerick.appspot.com",
-          messagingSenderId: "269496135848",
-          appId: "1:269496135848:web:3b11247483b22f203b929d"
+            apiKey: "AIzaSyAdXeP7jseYbT4utE0lnwisIoj555C2D14",
+            authDomain: "pruebafirebaseerick.firebaseapp.com",
+            projectId: "pruebafirebaseerick",
+            storageBucket: "pruebafirebaseerick.appspot.com",
+            messagingSenderId: "269496135848",
+            appId: "1:269496135848:web:3b11247483b22f203b929d"
         };
-      
+
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-      </script>
+    </script>
 </body>
+
 </html>
+<!--pipipipipi-->
