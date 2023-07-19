@@ -70,8 +70,10 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    padding-bottom: 50%;
-    padding-top: 15%;
+    padding-bottom: 12%;
+    padding-top: 12%;
+    margin-top: 25%;
+    margin-bottom: 13%;
 
 }
 
