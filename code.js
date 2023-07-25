@@ -7,3 +7,11 @@ function openNav() {
 function closeNav() {
   document.getElementById("Sidenav").style.width = "0";
 }
+//revisa si la pagina fue refrescada
+const pageAccessedByReload = (
+  (window.performance.navigation && window.performance.navigation.type === 1) ||
+    window.performance
+      .getEntriesByType('navigation')
+      .map((nav) => nav.type)
+      .includes('reload')
+);
