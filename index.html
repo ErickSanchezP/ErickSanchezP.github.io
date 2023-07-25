@@ -12,49 +12,71 @@
 
 <body>
 
-<div class="container">
+<div class="top" id="index01">
 
-    <video autoplay muted loop id="myVideo" class="bgvid">
-        <source src="assets/MBVideo.mp4" type="video/mp4">
-    </video>
+<nav class="navbar" id="Sidenav">
 
-    <nav class="navbar">
-        <img src="assets/three-bars.svg" id="bars-icon">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-        <ul class="navbar-list">
+    <a href="/index.html">Inicio</a>
 
-        <li class="nav_item">
-            <a href="#">Inicio</a>
-        </li>
-        <li class="nav_item">
-            <a href="#">Vehículos</a>
-        </li>
-        <li class="nav_item">
-            <a href="#">Quienes somos</a>
-        </li>
-        <li class="nav_item">
-            <a href="#">Historia</a>
-        </li>
-        <li class="nav_item">
-            <a href="https://ericksanchezp.github.io/museo">Museo</a>
-        </li>
-        </ul>
+    <a href="/conversiones.html">Conversiones</a>
+
+    <a href="/asientos.html">Asientos</a>
+
+    <a href="/museo.html">Museo</a>
+
+    <a href="/proyectosEspeciales.html">Proyectos especiales</a>
 
     </nav>
 
+<header>    
+    <span id="openMenu" onclick="openNav()">&#9776; Menu</span>
     <img src="assets/Logo.png" alt="Logo-MBDesign" class="logo">
+</header>
 
-    <div class="content">
-        <h1>MB Design</h1>
-        <a href="#">Contacta un vendedor</a>
+    <a href="#index02" class="scroll">Conoce más</a>
+
+<video autoplay muted loop id="myVideo" class="bgvid">
+    <source src="assets/MBVideo.mp4" type="video/mp4">
+</video>
+
+</div>
+
+<div class="container" id="index02"> 
+
+    <div class="aaaa">
+        <img class="foto" id="first" src="assets/pexels-hasan-gulec-11139345.jpg" alt="van">
     </div>
+
+    <div class="desc">
+        <h1>Conversiones</h1>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, vitae ea dolor reprehenderit maxime harum voluptatibus nisi facere alias necessitatibus voluptatum dolore, minima nostrum! Quaerat rerum odit itaque veritatis deleniti?</p>
+        <a href="/conversiones.html" id="btnconversiones" class="scroll">Conoce nuestras opciones de conversion</a>
+
+    </div>
+
+</div>
+
+<div class="container" id="index03" style="background-color: beige;"> 
     
+    <div class="desc">
+        <h1>Lorem</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, vitae ea dolor reprehenderit maxime harum voluptatibus nisi facere alias necessitatibus voluptatum dolore, minima nostrum! Quaerat rerum odit itaque veritatis deleniti?</p>
+    </div>
+    <div class="aaaa">
+        <img class="foto" id="first" src="assets/pexels-hasan-gulec-11139345.jpg" alt="van">
+    </div>
+
+    
+
 </div>
 
 <footer>
 
     <div class="foot-column">
-        <p>Columna 1</p>
+        <p>Footer</p>
 
         <ul>
             <li><a>Contacto</a></li>
@@ -64,11 +86,11 @@
     </div>
 
     <div class="foot-column">
-        <p>Columna 2</p>
+        <p>Footer columna 2</p>
 
         <ul>
-            <li><a>Lorem ipsum dolor sit amet </a></li>
-            <li><a>Lorem ipsum dolor sit amet </a></li>
+            <li><a href="">Lorem ipsum dolor sit amet </a></li>
+            <li><a href="">Lorem ipsum dolor sit amet </a></li>
         </ul>
 
     </div>
