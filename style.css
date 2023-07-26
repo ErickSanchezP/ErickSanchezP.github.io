@@ -1,17 +1,30 @@
-html {
-    scroll-behavior: smooth;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(6, 6, 6);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #f6f6f6;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #101010;
+    border-radius: 5px;
+    
+}
+::-webkit-scrollbar-track {
+    opacity: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(6, 6, 6);
 }
 
 .top {
@@ -26,12 +39,14 @@ a {
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 89vh;
-
+    width: 100%;
+    padding: 1rem;
 }
 
 header {
+    position: fixed;
     height: 12vh;
     width: 100%;
     display: flexbox;
@@ -82,28 +97,37 @@ header {
     height: 100px;
 }
 
-.scroll {
+.scroll-btn {
     text-align: center;
     padding: 15px;
     margin: auto;
     width: 50%;
     border-radius: 64px;
     background-color: rgb(244, 244, 244);
+}
 
+.hyperl-btn {
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(114, 114, 114);
 }
 
 .foto {
-    padding-right: 5em;
-    padding-left: 25px;
-    height: 400px;
+    width: 50%;
 }
 
 .desc {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 5%;
+
 }
 .desc p {
     padding-bottom: 50px;
+}
+.desc h1{
+    padding-bottom: 45px;
 }
 
 .bgvid {
@@ -141,20 +165,113 @@ footer a {
 
 /*inicio de conversiones*/
 
-.museo {
+.abc {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    padding-top: 12.5vh;
+    padding-bottom: 25px;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 10%
+    justify-items: center;
+    margin: 0;
 }
 
-.museo .foto {
-    transition: 100ms ease;
-    max-width: 32%;
-    max-height: fit-content;
+.foto-conver {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    transition: 80ms ease;
 }
 
-.camioneta:hover {
-    opacity: 0.3;
+.option {
+    text-align: center;
 }
+
+.foto-conver:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 9px;
+}
+
+.desc table {
+    width: 40%;
+    margin: auto;
+}
+
+#tableB {
+    display: none;
+}
+
+#tableC {
+    display: none;
+}
+
+#tableD {
+    display: none;
+}
+@media screen and (max-width: 1500px) {
+    .foto-conver {
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/*inicio de proyectos especiales*/
+
+.grid {
+    padding-top: 12.5vh;
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-count: 2;
+    height: 95vh;
+}
+
+.grid span {
+ background: #f6f6f617;
+ border-radius: 4px;
+
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: 70ms ease;
+}
+
+.seat-desc{
+    display: none;
+}
+
+.square:hover {
+    height: 40%;
+    opacity: 90%;
+}
+.square:hover .seat-desc{
+    display: block;
+}
+.square:hover .seat-tittle {
+    display: none;
+}
+
+/*galeria/museo*/

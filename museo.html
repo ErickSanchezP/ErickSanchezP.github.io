@@ -6,53 +6,65 @@
     <title>MBDesign MX</title>
 
     <link rel="stylesheet" href="style.css">
-    
     <script src="code.js"></script>
 </head>
-<body>
 
-    <nav class="navbar">
-        <img src="assets/barras.png" id="icono_barras">
-            
-        <ul class="navbar_var" id="paginas_menu">
-            <li class="nav_item">
-                <a href="https://ericksanchezp.github.io/#">Inicio</a>
-            </li>
-            <li class="nav_item">
-                <a href="#">Vehículos</a>
-            </li>
-            <li class="nav_item">
-                <a href="#">Quienes somos</a>
-            </li>
-            <li class="nav_item">
-                <a href="#">Historia</a>
-            </li>
-            <li class="nav_item">
-                <a href="#">Museo</a>
-        </li>
-        </ul>
-        
-    </nav>
+<nav class="navbar" id="Sidenav">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     
-    <header> 
+        <a href="/index.html">Inicio</a>
+    
+        <a href="/conversiones.html">Conversiones</a>
+    
+        <a href="/asientos.html">Asientos</a>
+    
+        <a href="/museo.html">Museo</a>
+    
+        <a href="/proyectosEspeciales.html">Proyectos especiales</a>
+    
+        </nav>
 
-        <h1>MB Design</h1>
-
-        <img src="assets/Logo.png" class="logo">
-
+<body>
+    <header>    
+        <span id="openMenu" onclick="openNav()">&#9776; Menu</span>
+        <img src="assets/Logo.png" alt="Logo-MBDesign" class="logo">
     </header>
+
 
     <div class="museo">
 
-        <img class="camioneta" src="assets/camioneta01.jpg" alt="Camioneta01">
+        <imgg class="camioneta" src="assets/camioneta01.jpg" alt="Camioneta01">
 
 
-        <img class="camioneta" src="assets/camioneta02.jpg" alt="Camioneta02">
+        <imgg class="camioneta" src="assets/camioneta02.jpg" alt="Camioneta02">
 
 
-        <img class="camioneta" src="assets/camioneta03.jpg" alt="Camioneta03">
+        <imgg class="camioneta" src="assets/camioneta03.jpg" alt="Camioneta03">
+
+    </div>
+<footer>
+
+    <div class="foot-column">
+        <p>Footer</p>
+
+        <ul>
+            <li><a>Contacto</a></li>
+            <li><a>Legal</a></li>
+        </ul>
 
     </div>
 
+    <div class="foot-column">
+        <p>Footer columna 2</p>
+
+        <ul>
+            <li><a href="">Lorem ipsum dolor sit amet </a></li>
+            <li><a href="">Lorem ipsum dolor sit amet </a></li>
+        </ul>
+
+    </div>
+
+</footer>
 </body>
 </html>
