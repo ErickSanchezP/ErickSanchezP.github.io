@@ -1,0 +1,242 @@
+.bgvid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+@media (min-aspect-ratio: 16/9){
+    .bgvid {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .bgvid {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.top {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.scroll-btn {
+    margin: auto;
+    margin-top: 70vh;
+    padding: 20px;
+    text-align: center;
+    border-radius: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+
+    background-color: #171717ab;
+    color: var(--main-text-color);
+
+    transition: 100ms;
+}
+.scroll-btn:hover{
+    color:#171717;
+    background-color: #f3f3f3ab;
+    border: transparent;
+    
+}
+
+.navigation-btn {
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--secondary-color-translucent);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.navigation-btn:hover{
+    filter: invert(100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-text-color);
+}
+.container .navigation-btn{
+    margin-bottom: 60px;
+}
+
+.bottom-scroll-container {
+    margin: auto;
+    margin-bottom: 0;
+}
+.bottom-scroll-btn {
+    background-color: none;
+    font-size: 2.5rem;
+
+}
+.bottom-scroll-btn:hover{
+    opacity: 50%;
+}
+
+.image-information {
+    display: flex;
+    width: 100%;
+    padding-top: 12vh;
+}
+.image-information img {
+    height: 520px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    
+
+    padding: 40px; 
+    
+    justify-content: space-evenly;
+    color: var(--secondary-color);
+}
+.information h1{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+.information p{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+
+.scroll-space {
+    height: 10vh;
+    margin: auto;
+
+}
+
+.img-bg-container {
+    height: 100vh;
+    width: 100%;
+    padding: 11vh;
+    padding-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: var(--main-text-color);
+}
+.img-bg-container h1{
+    font-size: 3rem;
+    padding-top: 10vh;
+    padding-bottom: 1rem;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+.img-bg-container hr{
+    color: var(--main-text-color);
+    width: 800px;
+}
+.img-bg-container p {
+    font-size: 1.5rem;  
+    width: 650px;
+
+    line-height: 1.3;
+    letter-spacing: 1px;
+
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.img-bg-container .bottom-scroll-btn{
+    color: var(--main-text-color);
+}
+
+#nav-btn-asientos{
+    width: 30vw;
+}
+
+.img-container {
+
+    --n: 1; /* number of rows*/
+  --m: 3; /* number of columns */ 
+    --f: .3;
+
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(var(--m), auto);
+    background-color: rgb(114, 114, 114);
+
+    
+}
+
+.img-container .img-grid {
+
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    cursor: pointer;
+    filter: grayscale(70%);
+
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    flex-direction: column;
+
+    justify-content:center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.img-container .img-grid a, .img-grid p {
+    display: none;
+    margin: auto;
+    text-align: center;
+}
+.img-grid p{
+    color: var(--main-text-color);
+    padding: 20%;
+
+}
+.img-grid:hover{
+    filter: grayscale(0);
+    width:  calc(100vh*var(--f)/var(--n));
+    height: calc(100vw*var(--f)/var(--m));
+}
+.img-grid:hover a{
+    display: block;
+}
+.img-grid:hover p {
+    display: block;
+}
+.img-container:hover span{
+    /* display: none; */
+}
+
+.img-grid span{
+    display: inline;
+    margin: auto;
+    color: var(--main-text-color);
+    font-size: 2rem;
+    text-align: center;
+}
