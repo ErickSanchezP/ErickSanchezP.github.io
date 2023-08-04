@@ -10,6 +10,12 @@
     -webkit-user-select: none;
 }
 
+@media only screen and (max-width: 719px) {
+    * {
+        font-size: 11px;
+    }
+}
+
 :root {
     --main-text-color: #f3f3f3;
     --secondary-color: #171717;
@@ -18,6 +24,7 @@
 
 html {
     scroll-behavior: smooth;
+    text-align: justify;
 }
 
 ::-webkit-scrollbar {
@@ -36,11 +43,14 @@ a {
     color: rgb(17, 17, 17);
     transition: 80ms ease;
 }
-
+h1 {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: normal;
+}
 header {
     color: var(--main-text-color);
     position: fixed;
-    height: 10vh;
+    height: 90px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -56,14 +66,17 @@ header .logo-title {
     display: flex;
     flex-direction: column;
     margin: auto; 
+
+    padding-top: 5px;
 }
 
 #openMenu {
     display: inline-block;
-    font-size: 3rem;
+    height: 50px;
     margin: 0;
     padding-left: 1rem;
     cursor: pointer;
+    
 }
 
 .navbar{
@@ -86,7 +99,38 @@ header .logo-title {
     font-size: 1rem;
     color: #818181;
     display: block;
-    transition: 0.3s;
+
+
+}
+.navbar :nth-child(2){
+    transition: all 1s ease .3s;
+}
+.navbar :nth-child(3){
+    transition: all 1s ease .6s;
+}
+.navbar :nth-child(4){
+    transition: all 1s ease 1.2s;
+}
+.navbar :nth-child(5){
+    transition: all 1s ease 1.5s;
+}
+.navbar :nth-child(6){
+    transition: all 1s ease 1.8s;
+}
+.slideIn {
+    transition: opacity 3s;
+    color: brown;
+}
+
+@keyframes fadeltor {
+    0%{
+        transform: translateX(-300%);
+        
+    }
+    100%{
+        transform: translateX(0%);
+        
+    }
 }
 
 .navbar .closebtn {
