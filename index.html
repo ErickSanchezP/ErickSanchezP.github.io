@@ -8,27 +8,28 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/9e03033328.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="code.js"></script>
+    <script defer src="code.js"></script>
 
 </head>
 
 <body>
-<nav class="navbar" id="Sidenav">
+<nav class="navbar" id="sidenav">
     
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     
-        <a class="navbar-link slideIn" href="/index.html">Inicio</a>
+        <a class="navbar-link" id="nvl1" href="/index.html">Inicio</a>
     
-        <a class="navbar-link" href="/conversiones.html">Conversiones</a>
+        <a class="navbar-link" id="nvl2" href="/conversiones.html">Conversiones</a>
     
-        <a class="navbar-link" href="/asientos.html">Asientos</a>
+        <a class="navbar-link" id="nvl3" href="/asientos.html">Asientos</a>
     
-        <a class="navbar-link" href="/museo.html">Museo</a>
+        <a class="navbar-link" id="nvl4" href="/museo.html">Museo</a>
     
-        <a class="navbar-link" href="/proyectosEspeciales.html">Proyectos especiales</a>
+        <a class="navbar-link" id="nvl5" href="/proyectosEspeciales.html">Proyectos especiales</a>
     
 </nav>   
 
@@ -42,7 +43,7 @@
         <img src="assets/logo-letras-blancas.png" alt="MBDESIGN" class="title">
     </div>
     <div class="relleno">
-        
+        <a>Find a dealer</a>
     </div>
 </header>
 <a href="#index02" class="scroll-btn">"Get started"</a>
@@ -55,9 +56,15 @@
 
 <div class="container" id="index02"> 
 
+    <div class="placeholder"></div>
+
     <div class="image-information">
 
-        <img src="https://images.pexels.com/photos/11139392/pexels-photo-11139392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="van">
+        <div class="img-conversiones" 
+        style="background-image: url(https://images.pexels.com/photos/11139392/pexels-photo-11139392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+        </div>
+
+        <!-- <img src="https://images.pexels.com/photos/11139392/pexels-photo-11139392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="van"> -->
         <div class="information">
             <h1>CONVERSIONES AUTOMOTRICES</h1>
             <p>MB Design es especialista en la conversión
@@ -118,14 +125,14 @@ style="background-image: url('https://images.unsplash.com/photo-1611251953880-61
     <div class="img-grid" 
     style="background-image: url('https://images.pexels.com/photos/11139392/pexels-photo-11139392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"
     >
-    <span>Touring van</span>
+    <span>TOUTING VAN</span>
     <p>Nos especializamos en el carrozado de vans turísticas. Desde versiones estándar hasta lujosas, tenemos todo lo que necesitas para una experiencia de viaje excepcional.</p>
     <a class="navigation-btn">Más información</a>
     </div>
     <div class="img-grid"
     style="background-image:url('https://images.pexels.com/photos/9577104/pexels-photo-9577104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"
     >
-    <span>Royal Van</span>
+    <span>ROYAL VAN</span>
     <p>Descubre el máximo lujo sobre ruedas con nuestras exclusivas Royal Vans en
         MB Design. Estas conversiones de lujo brindan una experiencia de viaje inigualable. 
         </p>
@@ -134,7 +141,7 @@ style="background-image: url('https://images.unsplash.com/photo-1611251953880-61
     <div class="img-grid"
     style="background-image:url('https://images.pexels.com/photos/11139346/pexels-photo-11139346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"
     >
-    <span>Proyectos especiales</span>
+    <span>PROYECTOS ESPECIALES</span>
     <p>Oficinas para servicios de gobierno y municipios
         Consultorios Moviles<br>
         Aulas Moviles<br>
@@ -152,25 +159,36 @@ style="background-image: url('https://images.unsplash.com/photo-1611251953880-61
 
 <footer>
 
-    <div class="foot-column">
-        <p>Información adicional</p>
-
-        <ul>
-            <li><a>Contacto</a></li>
-            <li><a>Legal</a></li>
-        </ul>
-
+    <div class="footer-logo">
+        <img src="assets/logo-blanco.png" alt="Logo-MBDesign" class="logo">
     </div>
 
-    <div class="foot-column">
-        <p>Redes Sociales</p>
+    <div class="footer-text">
 
-        <ul>
-            <li><a>Twitter </a></li>
-            <li><a>TikTok </a></li>
-            <li><a>Instagram </a></li>
-        </ul>
-
+        <div class="foot-column">
+            <p>INFORMACIÓN ADICIONAL</p>
+    
+            <ul>
+                <li><a>CONTACTO</a></li>
+                <li><a>LEGAL</a></li>
+                <li><a>CERTIFICACIONES</a></li>
+            </ul>
+    
+        </div>
+    
+        <div class="foot-column">
+            
+            <p>REDES SOCIALES</p>
+    
+            <ul>
+                <li><a>TWITTER </a> <i class="fa fa-twitter-square"></i></li>
+                <li><a>TIKTOK </a> <i class="fa fa-tiktok"></i></li>
+                <li><a>INSTAGRAM </a><i class="fa fa-instagram"></i></li>
+                <li><a href="">FACEBOOK</a> <i class="fa fa-facebook-square"></i>
+                </li>
+            </ul>
+    
+        </div>
     </div>
 
 </footer>

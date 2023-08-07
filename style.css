@@ -62,6 +62,7 @@ header {
     border-bottom: solid #f3f3f3ab 1px;
 }
 
+
 header .logo-title {
     display: flex;
     flex-direction: column;
@@ -69,76 +70,12 @@ header .logo-title {
 
     padding-top: 5px;
 }
-
-#openMenu {
-    display: inline-block;
-    height: 50px;
-    margin: 0;
-    padding-left: 1rem;
+header .relleno a{
+    color: var(--main-text-color);
+    float: right;
+    padding-right: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    
-}
-
-.navbar{
-    position: fixed;
-    width: 0;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding-top: 60px;
-    background-color: rgb(17, 17, 17);
-    display: flexbox;
-    z-index: 1;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.navbar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #818181;
-    display: block;
-
-
-}
-.navbar :nth-child(2){
-    transition: all 1s ease .3s;
-}
-.navbar :nth-child(3){
-    transition: all 1s ease .6s;
-}
-.navbar :nth-child(4){
-    transition: all 1s ease 1.2s;
-}
-.navbar :nth-child(5){
-    transition: all 1s ease 1.5s;
-}
-.navbar :nth-child(6){
-    transition: all 1s ease 1.8s;
-}
-.slideIn {
-    transition: opacity 3s;
-    color: brown;
-}
-
-@keyframes fadeltor {
-    0%{
-        transform: translateX(-300%);
-        
-    }
-    100%{
-        transform: translateX(0%);
-        
-    }
-}
-
-.navbar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
 }
 
 .logo {
@@ -153,12 +90,26 @@ header .logo-title {
 
 footer {
     width: 100%;
-    padding-top: 15px;
     display: flex;
+    flex-direction: column;
     background-color: rgb(9, 9, 9);
     color: rgb(208, 208, 208);
     justify-content: space-evenly;
+    margin: auto;
+    padding: 1rem;
+
 }
+footer .footer-logo {
+    margin: auto;
+}
+footer .footer-text {
+    display: flex;
+    columns: 2;
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height: +2;
+}
+
 footer a {
     color: rgb(238, 238, 238);
 }
