@@ -1,0 +1,245 @@
+.modelos-grid {
+    --n: 4; /* number of rows*/
+    --m: 2; /* number of columns */ 
+    --f: .3;
+    height: 100svh;
+
+
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(var(--m), auto);
+    margin: 0 auto;
+    padding: .5rem;
+    padding-top: 90px;
+
+}
+
+.modelos-grid :nth-child(5){ /* last image, odd */
+    grid-column: span 2;
+    
+}
+.modelos-grid :nth-child(8){ /* last image, odd */
+    grid-column: span 2;
+    
+}
+
+.modelos-grid h1 {
+    font-size: 2.5rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+
+/* .modelo{
+
+    display: flex;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: .5s ease;
+
+    justify-content: start;
+    align-items: end;
+
+} */
+.modelo{
+
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: .3s ease-in;
+    display: flex;
+    flex-direction: column;
+
+    justify-content:end;
+    align-items: start;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.modelo a {
+    border-radius: 0;
+    padding: .5rem;
+    cursor: auto;
+}
+a:hover{
+    filter: invert(0%);
+}
+
+.modelo:hover {
+    width:  calc(100vh*var(--f)/var(--n));
+    height: calc(100vw*var(--f)/var(--m));
+
+}
+
+/* ejemplo prestado de index */
+
+.img-container .img-grid {
+
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    cursor: pointer;
+    filter: grayscale(70%);
+
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    flex-direction: column;
+
+    justify-content:center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.img-container .img-grid a, .img-grid p {
+    display: none;
+    margin: auto;
+    text-align: center;
+}
+.img-grid p{
+    color: var(--main-text-color);
+    padding: 20%;
+
+}
+.img-grid:hover{
+    filter: grayscale(0);
+    width:  calc(100vh*var(--f)/var(--n));
+    height: calc(100vw*var(--f)/var(--m));
+}
+
+  /*MODELOS*/
+  .banner {
+    width: 100%;
+    height: 600px;
+
+    margin-top: 90px;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .banner_option {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    
+    text-align: center;
+    padding-top: 300px;
+
+    transition: ease .5s;
+
+    
+    background-color: #17171763;
+  }
+  .banner_option a{
+    width: 100%;
+    height: 100%;
+
+    padding: 5rem;
+
+    color: var(--main-text-color);
+    margin: auto;
+
+}
+
+.banner_option:hover {
+    filter: invert(100%);
+}
+
+.table {
+    display: grid;
+
+    grid-template-areas: 
+        'a b c d'
+        'e f g h'
+        'i j k l'
+        'm n o p';
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(6, auto);
+}
+
+/* TABLAS */
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 9px;
+}
+
+.desc table {
+    width: 40%;
+    margin: auto;
+    
+    border: solid #171717 .8rem;
+    border-radius: 2rem;
+}
+
+#tableD {
+    display: none;
+}
+@media screen and (max-width: 1500px) {
+    .foto-conver {
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/*pagina opcion A*/
+
+.pisos{
+
+    margin-top: 90px;
+    height: 65vh;
+    width: 100%;
+
+    padding: 3rem;
+
+
+    background-size: cover;
+    background-position: 15%;
+    background-repeat: no-repeat;
+}
+h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+p {
+    font-size: 1.5rem;
+}
+
+.laterales {
+    display: flex;
+    height: 65svh;
+}
+.laterales .text {
+    
+}
+.img-laterales {
+    width: 33%;
+    height: 100%;
+    padding-right: 1rem;
+
+    background-size: cover;
+    background-position: 15%;
+    background-repeat: no-repeat;
+}

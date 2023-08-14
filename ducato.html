@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBDesign MX</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="conversiones.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great_Vibes">
+    <script src="https://kit.fontawesome.com/9e03033328.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="code.js"></script>
+
+</head>
+<body>
+    <nav class="navbar" id="sidenav">
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <a class="navbar-link" id="nvl1" href="/index.html">Inicio</a>
+        
+            <a class="navbar-link" id="nvl2" href="/conversiones.html">Conversiones</a>
+        
+            <a class="navbar-link" id="nvl3" href="/asientos.html">Asientos</a>
+        
+            <a class="navbar-link" id="nvl4" href="/museo.html">Museo</a>
+        
+            <a class="navbar-link" id="nvl5" href="/proyectosEspeciales.html">Proyectos especiales</a>
+        
+            <a href="#" class="navbar-link" id="nvl6">Aula móvil</a>
+            <a href="#" class="navbar-link" id="nvl7">Consultorio móvil</a>
+            <a href="#" class="navbar-link" id="nvl8">Oficinas personalizadas</a>
+            <a href="#" class="navbar-link" id="nvl9">Más...</a>
+            
+            <a href="#" class="navbar-link" id="nvl10" style="color: #FFD700;">ROYAL VAN</a>
+            <!-- <a href="#" class="navbar-link" id="nvl9">Más</a> -->
+    </nav> 
+    <header>
+        <div>
+            <img src="assets/three-bars.svg" id="openMenu" class="om" onclick="openNav()">
+        </div>    
+        <div class="logo-title" >
+            <img src="assets/logo-blanco.png" href="index.html" t="Logo-MBDesign" class="logo">
+            <img src="assets/logo-letras-blancas.png" alt="MBDESIGN" class="title">
+        </div>
+        <div class="relleno">
+            <a>Find a dealer</a>
+        </div>
+    </header>
+    
+    <div class="banner"
+    style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional/nafta/fiat/es_mx/2023/Ducato-2023/03-Ducato-Galerias/FIAT-DUCATO-2023-GALERIA-EXTERIOR-2.jpg.img.1440.jpg');"
+    >
+
+        <div class="banner_option" id="estemismo"> <a href="" onclick="showTable()">Opción A</a> </div>
+        <div class="banner_option"><a href="">Opción B</a> </div>
+        <div class="banner_option"><a href="">Luxury</a> </div>
+
+    </div>
+
+    <!--<div class="table">
+        <div class="title">Pisos</div>
+        <div class="title">Pared lateral</div>
+        <div class="title">Cajón maletero</div>
+        <div class="title">Equipo de audio</div>
+        <div class="title">Asientos</div>
+        <div class="title">Adicionales</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+        <div class="title">Pisos</div>
+    </div> TABLA GRID, POR SI ACASO --> 
+
+    <div class="desc" id="tablaA"><!--tabla opcion A-->
+    <h1>Opción A</h1>
+        <table id="tableA">
+        <tr>
+            <th>Pisos</th>
+            <th>Pared lateral</th>
+            <th>Asientos</th>
+            <th>Adicionales</th>
+            
+        </tr>
+        <tr>
+            <td>Pisos de madera</td>
+            <td> - </td>
+            <td>19 Asientos en unidad (Segun se requiera)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Linoleum tipo duela</td>
+            <td>-</td>
+            <td> - </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>MDF en puerta lateral</td>
+            <td>Paneles de ventana</td>
+            <td> - </td>
+            <td></td>
+        </tr>
+        <tr>
+            
+            <td>Estribo en zona de pasajeros</td>
+            <td>Paneles de pared</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            
+            <td> - </td>
+            <td>-</td>
+            <td>-</td>
+            <td>Escalon lateral fijo con Antiderrapante</td>
+        </tr>
+    </table>
+</div>
+
+<div class="desc"><!--tabla opcion B-->
+    <h1>Opción B</h1>
+    <table id="tableB">
+        <tr>
+            <th>Pisos</th>
+            <th>Pared lateral</th>
+            <th>Cajón maletero</th>
+            <th>Asientos</th>
+            <th>Adicionales</th>
+            
+        </tr>
+        <tr>
+            <td>Pisos de madera</td>
+            <td>Paneles de ventana</td>
+            <td>Estructura para maletero con madera</td>
+            <td>19 Asientos en unidad (Segun se requiera)</td>
+            <td>Escalon lateral fijo con Antiderrapante</td>
+        </tr>
+        <tr>
+            <td>Linoleum tipo duela</td>
+            <td>Paneles de pared</td>
+            <td>Alfombrado automotriz</td>
+            <td> - </td>
+            <td> - </td>
+        </tr>
+        <tr>
+            <td>MDF en puerta lateral</td>
+            <td> - </td>
+            <td>Iluminación led</td>
+            <td> - </td>
+            <td> - </td>
+        </tr>
+        <tr>
+            
+            <td>Estribo en zona de pasajeros</td>
+            <td> - </td>
+            <td>Estribo trasero</td>
+            <td> - </td>
+            <td> - </td>
+        </tr>
+
+        
+    </table>
+</div>
+
+<div class="desc"><!--tabla opcion C-->
+    <h1>Opción C</h1>
+    <table id="tableC">
+        <tr>
+            <th>Pisos</th>
+            <th>Pared lateral</th>
+            <th>Cajón maletero</th>
+            <th>Equipo de audio</th>
+            <th>Asientos</th>
+            <th>Adicionales</th>
+            
+        </tr>
+        <tr>
+            <td>Pisos de madera</td>
+            <td>Portabultos en pared lateral izquierda</td>
+            <td>Estructura para maletero con madera</td>
+            <td>Estero Doble Din (Entrada USB, AUX Y BT).</td>
+            <td>19 Asientos en unidad (Segun se requiera)</td>
+            <td>Cámara de Reversa</td>
+        </tr>
+        <tr>
+            <td>Linoleum tipo duela</td>
+            <td>Luces led en portabultos</td>
+            <td>Alfombrado automotriz</td>
+            <td>Bocinas 9X7 (4) y Amplificador.</td>
+            <td> - </td>
+            <td>Polarizado de Ventanas Laterales | Cristales traseros</td>
+        </tr>
+        <tr>
+            <td>MDF en puerta lateral</td>
+            <td>Paneles de ventana</td>
+            <td>Iluminación led</td>
+            <td>Cableado Automotriz (Anti Flama y Autoextinguible).</td>
+            <td> - </td>
+            <td>Cortinas Corredizas para Ventanas</td>
+        </tr>
+        <tr>
+            
+            <td>Estribo en zona de pasajeros</td>
+            <td>Paneles de pared</td>
+            <td>Estribo trasero</td>
+            <td> - </td>
+            <td> - </td>
+            <td>Centro de Entretenimiento (Smart Tv con Blu-Ray)</td>
+        </tr>
+        <tr>
+            
+            <td> - </td>
+            <td>Conexiones usb (6)</td>
+            <td> - </td>
+            <td> - </td>
+            <td> - </td>
+            <td>Escalon lateral fijo con Antiderrapante</td>
+        </tr>
+        
+        
+    </table>
+</div>
+
+<div class="desc"> <!--no se q tabla e eta pero ahi eta-->
+    <table id="tableD">
+        <tr>
+            <th>Pisos</th>
+            <th>Pared lateral</th>
+            <th>Cajón maletero</th>
+            <th>Equipo de audio</th>
+            <th>Asientos</th>
+            <th>Adicionales</th>
+            
+        </tr>
+        <tr>
+            <td>Pisos de madera</td>
+            <td>Portabultos en pared lateral izquierda</td>
+            <td>Estructura para maletero con madera</td>
+            <td>Estero Doble Din (Entrada USB, AUX Y BT).</td>
+            <td>19 Asientos en unidad (Segun se requiera)</td>
+            <td>Cámara de Reversa</td>
+        </tr>
+        <tr>
+            <td>Linoleum tipo duela</td>
+            <td>Luces led en portabultos</td>
+            <td>Alfombrado automotriz</td>
+            <td>Bocinas 9X7 (4) y Amplificador.</td>
+            <td> - </td>
+            <td>Polarizado de Ventanas Laterales | Cristales traseros</td>
+        </tr>
+        <tr>
+            <td>MDF en puerta lateral</td>
+            <td>Paneles de ventana</td>
+            <td>Iluminación led</td>
+            <td>Cableado Automotriz (Anti Flama y Autoextinguible).</td>
+            <td> - </td>
+            <td>Cortinas Corredizas para Ventanas</td>
+        </tr>
+        <tr>
+            
+            <td>Estribo en zona de pasajeros</td>
+            <td>Paneles de pared</td>
+            <td>Estribo trasero</td>
+            <td></td>
+            <td></td>
+            <td>Centro de Entretenimiento (Smart Tv con Blu-Ray)</td>
+        </tr>
+        <tr>
+            
+            <td> - </td>
+            <td>Conexiones usb (6)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Escalon lateral fijo con Antiderrapante</td>
+        </tr>
+        
+        
+    </table>
+</div>
+
+    <footer>
+    
+        <div class="footer-logo">
+            <img src="assets/logo-blanco.png" alt="Logo-MBDesign" class="logo">
+        </div>
+    
+        <hr style="width: 100%; height: 1px; color: var(--main-text-color); background-color: var(--main-text-color);">
+    
+        <div class="footer-text">
+    
+            <div class="foot-column">
+                <p>INFORMACIÓN ADICIONAL</p>
+                
+                <ul style="list-style-type: none;">
+                    <li><a>CONTACTO</a></li>
+                    <li><a>LEGAL</a></li>
+                    <li><a>CERTIFICACIONES</a></li>
+                </ul>
+                
+            </div>
+            
+            <div class="foot-column">
+                
+                <p>REDES SOCIALES</p>
+                
+                <ul style="list-style-type: none;">
+                    <li><a>TIKTOK </a> <i class="fa fa-tiktok"></i></li>
+                    <li><a>INSTAGRAM </a><i class="fa fa-instagram"></i></li>
+                    <li><a href="">FACEBOOK</a> <i class="fa fa-facebook-square"></i>
+                    <li><a href="">TWITTER</a> <i class="fa fa-twitter-square"></i>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    
+    </footer>
+</body>
+</html>
