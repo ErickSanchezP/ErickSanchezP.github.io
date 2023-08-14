@@ -7,8 +7,19 @@
     font-size: 16px;
 
     -webkit-user-drag: none;
-    -webkit-user-select: none;
 }
+
+/* TODO scroll automatico con rueda */
+
+/* .scroll-content {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100svh;
+}
+
+.scroll-content section {
+scroll-snap-align: start;
+} */
 
 @media only screen and (max-width: 719px) {
     * {
@@ -49,7 +60,8 @@ h1 {
 }
 header {
     color: var(--main-text-color);
-    position: fixed;
+    position: absolute;
+    top: 0;
     height: 90px;
     width: 100%;
     display: grid;
@@ -97,7 +109,6 @@ footer {
     justify-content: space-evenly;
     margin: auto;
     padding: 1rem;
-
 }
 footer .footer-logo {
     margin: auto;
@@ -107,77 +118,36 @@ footer .footer-text {
     columns: 2;
     flex-direction: row;
     justify-content: space-evenly;
-    line-height: +2;
+    line-height: +3;
 }
 
 footer a {
     color: rgb(238, 238, 238);
 }
 
+/* SECTIONS  */
+
+
+
+/* botones */
+
+.navigation-btn {
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--secondary-color-translucent);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.navigation-btn:hover{
+    filter: invert(100%);
+}
 /*fin de index*/
 
 /*inicio de conversiones*/
 
 
-.abc {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-top: 12.5vh;
-    padding-bottom: 25px;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    margin: 0;
-}
-
-.foto-conver {
-    object-fit: cover;
-    width: 500px;
-    height: 500px;
-    transition: 80ms ease;
-}
-
-.option {
-    text-align: center;
-}
-
-.foto-conver:hover {
-    opacity: 60%;
-    cursor: pointer;
-}
-
-th {
-    padding: 10px;
-}
-
-td {
-    padding: 9px;
-}
-
-.desc table {
-    width: 40%;
-    margin: auto;
-}
-
-#tableB {
-    display: none;
-}
-
-#tableC {
-    display: none;
-}
-
-#tableD {
-    display: none;
-}
-@media screen and (max-width: 1500px) {
-    .foto-conver {
-        object-fit: cover;
-        width: 250px;
-        height: 250px;
-    }
-}
 
 /*inicio de proyectos especiales*/
 
