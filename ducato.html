@@ -16,124 +16,189 @@
 
 </head>
 <body>
-    <nav class="navbar" id="sidenav">
-    
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        
-            <a class="navbar-link" id="nvl1" href="/index.html">Inicio</a>
-        
-            <a class="navbar-link" id="nvl2" href="/conversiones.html">Conversiones</a>
-        
-            <a class="navbar-link" id="nvl3" href="/asientos.html">Asientos</a>
-        
-            <a class="navbar-link" id="nvl4" href="/museo.html">Museo</a>
-        
-            <a class="navbar-link" id="nvl5" href="/proyectosEspeciales.html">Proyectos especiales</a>
-        
-            <a href="#" class="navbar-link" id="nvl6">Aula móvil</a>
-            <a href="#" class="navbar-link" id="nvl7">Consultorio móvil</a>
-            <a href="#" class="navbar-link" id="nvl8">Oficinas personalizadas</a>
-            <a href="#" class="navbar-link" id="nvl9">Más...</a>
-            
-            <a href="#" class="navbar-link" id="nvl10" style="color: #FFD700;">ROYAL VAN</a>
-            <!-- <a href="#" class="navbar-link" id="nvl9">Más</a> -->
-    </nav> 
-    <header>
-        <div>
-            <img src="assets/three-bars.svg" id="openMenu" class="om" onclick="openNav()">
-        </div>    
-        <div class="logo-title" >
-            <img src="assets/logo-blanco.png" href="index.html" t="Logo-MBDesign" class="logo">
-            <img src="assets/logo-letras-blancas.png" alt="MBDESIGN" class="title">
-        </div>
-        <div class="relleno">
-            <a>Find a dealer</a>
-        </div>
-    </header>
-    
-    <div class="banner"
-    style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional/nafta/fiat/es_mx/2023/Ducato-2023/03-Ducato-Galerias/FIAT-DUCATO-2023-GALERIA-EXTERIOR-2.jpg.img.1440.jpg');"
-    >
+<nav class="navbar" id="sidenav">
 
-        <div class="banner_option" id="estemismo"> <a href="" onclick="showTable()">Opción A</a> </div>
-        <div class="banner_option"><a href="">Opción B</a> </div>
-        <div class="banner_option"><a href="">Luxury</a> </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a class="navbar-link" id="nvl1" href="/index.html">Inicio</a>
+    
+        <a class="navbar-link" id="nvl2" href="/conversiones.html">Conversiones</a>
+    
+        <a class="navbar-link" id="nvl3" href="/asientos.html">Asientos</a>
+    
+        <a class="navbar-link" id="nvl4" href="/museo.html">Museo</a>
+    
+        <a class="navbar-link" id="nvl5" href="/proyectosEspeciales.html">Proyectos especiales</a>
+    
+        <a href="#" class="navbar-link" id="nvl6">Aula móvil</a>
+        <a href="#" class="navbar-link" id="nvl7">Consultorio móvil</a>
+        <a href="#" class="navbar-link" id="nvl8">Oficinas personalizadas</a>
+        <a href="#" class="navbar-link" id="nvl9">Más...</a>
+        
+        <a href="#" class="navbar-link" id="nvl10" style="color: #FFD700;">ROYAL VAN</a>
+        <!-- <a href="#" class="navbar-link" id="nvl9">Más</a> -->
+</nav> 
+<header>
+    <div>
+        <img src="assets/three-bars.svg" id="openMenu" class="om" onclick="openNav()">
+    </div>    
+    <div class="logo-title" >
+        <img src="assets/logo-blanco.png" href="index.html" t="Logo-MBDesign" class="logo">
+        <img src="assets/logo-letras-blancas.png" alt="MBDESIGN" class="title">
+    </div>
+    <div class="relleno">
+        <a>Find a dealer</a>
+    </div>
+</header>
+    
+<div class="banner"
+style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional/nafta/fiat/es_mx/2023/Ducato-2023/03-Ducato-Galerias/FIAT-DUCATO-2023-GALERIA-EXTERIOR-2.jpg.img.1440.jpg');"
+>
+
+    <div class="banner_option" id="estemismo"> <a href="#OA" onclick="showTable()">Preconfiguración A</a> </div>
+    <div class="banner_option"><a href="#OB">Preconfiguración B</a> </div>
+    <div class="banner_option"><a href="#OC">Luxury</a> </div>
+
+</div>
+
+<!--<div class="table">
+    <div class="title">Pisos</div>
+    <div class="title">Pared lateral</div>
+    <div class="title">Cajón maletero</div>
+    <div class="title">Equipo de audio</div>
+    <div class="title">Asientos</div>
+    <div class="title">Adicionales</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+    <div class="title">Pisos</div>
+</div> TABLA GRID, POR SI ACASO --> 
+    
+<div class="personalizer">
+        
+    <h1>Personaliza tu van</h1>
+    <div class="form-container">
+    <form class="form-personalizer" action=""><!--TODO-->
+        <input id="pisos-madera" name="pisos-madera" type="checkbox">
+        <label for="pisos-madera">Pisos de madera</label><br>
+        <input id="lino-duela" name="lino-duela" type="checkbox">
+        <label for="lino-duela">Linoleum tipo duela</label><br>
+        <input id="mdf" name="mdf" type="checkbox">
+        <label for="mdf">MDF en puerta lateral</label><br>
+        <input id="estribo" name="estribo" type="checkbox">
+        <label for="estribo">Estribo en zona de pasajeros</label><br>
+        <input id="portabultos" name="portabultos" type="checkbox">
+        <label for="portabultos">Portabultos en pared lateral izquierda</label><br>
+        <input id="led-portabultos" name="led-portabultos" type="checkbox">
+        <label for="led-portabultos">Luces led en portabultos</label><br>
+        <input id="paneles-ventana" name="paneles-ventana" type="checkbox">
+        <label for="paneles-ventana">Paneles de ventana</label><br>
+        <input id="paneles-pared" name="paneles-pared" type="checkbox">
+        <label for="paneles-pared">Paneled de pared</label><br>
+        <input id="usb" name="usb" type="checkbox">
+        <label for="usb">Conexiones USB</label><br>
+        <input id="tablero-madera" name="tablero-madera" type="checkbox">
+        <label for="tablero-madera">Estructura para maletero con madera</label><br>
+        <input id="alfombrado" name="alfombrado" type="checkbox">
+        <label for="alfombrado">Alfombrado automotriz</label><br>
+        <input id="iluminacion-led" name="iluminacion-led" type="checkbox">
+        <label for="iluminacion-led">Iluminación LED</label><br>
+        <input id="estribo" name="estribo" type="checkbox">
+        <label for="estribo">Estribo trasero</label><br>
+        <input id="estereo-doble-d" name="estereo-doble-d" type="checkbox">
+        <label for="estereo-doble-d">Estero Doble Din (Entrada USB, AUX Y BT)</label><br>
+        <input id="bocinas-9x7" name="bocinas-9x7" type="checkbox">
+        <label for="bocinas-9x7">Bocinas 9X7 (4) y Amplificador.</label><br>
+        <input id="cableado-automotriz" name="cableado-automotriz" type="checkbox">
+        <label for="cableado-automotriz">Cableado Automotriz (Anti Flama y Autoextinguible).</label><br>
+        <input id="camara-reversa" name="camara-reversa" type="checkbox">
+        <label for="camara-reversa">Cámara de reversa</label><br>
+        <input id="polarizado" name="polarizado" type="checkbox">
+        <label for="polarizado">Polarizado de Ventanas Laterales | traseros</label><br>
+        <input id="cortinas" name="cortinas" type="checkbox">
+        <label for="cortinas">Cortinas corredizas para Ventanas</label><br>
+        <input id="entretenimiento" name="entretenimiento" type="checkbox">
+        <label for="entretenimiento">Centro de Entretenimiento (Smart Tv con Blu-Ray)</label><br>
+        <input id="escalon-antiderrapante" name="escalon-antiderrapante" type="checkbox">
+        <label for="escalon-antiderrapante">Escalon lateral fijo con Antiderrapante</label><br>
+        
+        <label for="asientos"
+        style="">Cantidad de asientos</label><br>
+        <select name="asientos" id="asientos"
+        style="padding: 1rem;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9+">9+</option>
+        </select>   <br><br>
+
+        <label for="comment"
+        >Comentarios o dudas adicionales</label><br>
+        <input type="text" id="comment" name="comment" value="" 
+        placeholder="Cuéntanos que necesitas"><br>
+
+        <input class="config-submit" type="submit" value="Enviar configuración a un vendedor"> 
+    </form>
 
     </div>
+</div>
 
-    <!--<div class="table">
-        <div class="title">Pisos</div>
-        <div class="title">Pared lateral</div>
-        <div class="title">Cajón maletero</div>
-        <div class="title">Equipo de audio</div>
-        <div class="title">Asientos</div>
-        <div class="title">Adicionales</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-        <div class="title">Pisos</div>
-    </div> TABLA GRID, POR SI ACASO --> 
+    <h1 style="text-align: center;">Configuraciones</h1>
+    <h2 style="text-align: center;">Nuestras opciones preconfiguradas son personalizables</h2>
 
     <div class="desc" id="tablaA"><!--tabla opcion A-->
-    <h1>Opción A</h1>
-        <table id="tableA">
+    <h1 id="OA">Opción A</h1>
+        <table class="table-description" id="tableA">
         <tr>
             <th>Pisos</th>
             <th>Pared lateral</th>
-            <th>Asientos</th>
             <th>Adicionales</th>
             
         </tr>
         <tr>
             <td>Pisos de madera</td>
-            <td> - </td>
-            <td>19 Asientos en unidad (Segun se requiera)</td>
-            <td></td>
+            <td>Paneles de ventana</td>
+            <td>Escalon lateral fijo con Antiderrapante</td>
         </tr>
         <tr>
             <td>Linoleum tipo duela</td>
+            <td>Paneles de pared</td>
             <td>-</td>
-            <td> - </td>
-            <td></td>
         </tr>
         <tr>
             <td>MDF en puerta lateral</td>
-            <td>Paneles de ventana</td>
-            <td> - </td>
-            <td></td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
             
             <td>Estribo en zona de pasajeros</td>
-            <td>Paneles de pared</td>
             <td>-</td>
             <td>-</td>
         </tr>
-        <tr>
-            
-            <td> - </td>
-            <td>-</td>
-            <td>-</td>
-            <td>Escalon lateral fijo con Antiderrapante</td>
-        </tr>
+
     </table>
 </div>
 
-<div class="desc"><!--tabla opcion B-->
+<div id="OB" class="desc"><!--tabla opcion B-->
     <h1>Opción B</h1>
-    <table id="tableB">
+    <table class="table-description" id="tableB">
         <tr>
             <th>Pisos</th>
             <th>Pared lateral</th>
             <th>Cajón maletero</th>
-            <th>Asientos</th>
             <th>Adicionales</th>
             
         </tr>
@@ -141,39 +206,35 @@
             <td>Pisos de madera</td>
             <td>Paneles de ventana</td>
             <td>Estructura para maletero con madera</td>
-            <td>19 Asientos en unidad (Segun se requiera)</td>
             <td>Escalon lateral fijo con Antiderrapante</td>
         </tr>
         <tr>
             <td>Linoleum tipo duela</td>
             <td>Paneles de pared</td>
             <td>Alfombrado automotriz</td>
-            <td> - </td>
-            <td> - </td>
+            <td>-</td>
         </tr>
         <tr>
             <td>MDF en puerta lateral</td>
-            <td> - </td>
+            <td>-</td>
             <td>Iluminación led</td>
-            <td> - </td>
-            <td> - </td>
+            <td>-</td>
         </tr>
         <tr>
             
             <td>Estribo en zona de pasajeros</td>
-            <td> - </td>
+            <td>-</td>
             <td>Estribo trasero</td>
-            <td> - </td>
-            <td> - </td>
+            <td>-</td>
         </tr>
 
         
     </table>
 </div>
 
-<div class="desc"><!--tabla opcion C-->
-    <h1>Opción C</h1>
-    <table id="tableC">
+<div id="OC" class="desc"><!--tabla opcion C-->
+    <h1>Luxury Van</h1>
+    <table class="table-description" id="tableC">
         <tr>
             <th>Pisos</th>
             <th>Pared lateral</th>
@@ -196,7 +257,7 @@
             <td>Luces led en portabultos</td>
             <td>Alfombrado automotriz</td>
             <td>Bocinas 9X7 (4) y Amplificador.</td>
-            <td> - </td>
+            <td>-</td>
             <td>Polarizado de Ventanas Laterales | Cristales traseros</td>
         </tr>
         <tr>
@@ -204,7 +265,7 @@
             <td>Paneles de ventana</td>
             <td>Iluminación led</td>
             <td>Cableado Automotriz (Anti Flama y Autoextinguible).</td>
-            <td> - </td>
+            <td>-</td>
             <td>Cortinas Corredizas para Ventanas</td>
         </tr>
         <tr>
@@ -212,17 +273,17 @@
             <td>Estribo en zona de pasajeros</td>
             <td>Paneles de pared</td>
             <td>Estribo trasero</td>
-            <td> - </td>
-            <td> - </td>
+            <td>-</td>
+            <td>-</td>
             <td>Centro de Entretenimiento (Smart Tv con Blu-Ray)</td>
         </tr>
         <tr>
             
-            <td> - </td>
+            <td>-</td>
             <td>Conexiones usb (6)</td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
             <td>Escalon lateral fijo con Antiderrapante</td>
         </tr>
         
@@ -254,7 +315,7 @@
             <td>Luces led en portabultos</td>
             <td>Alfombrado automotriz</td>
             <td>Bocinas 9X7 (4) y Amplificador.</td>
-            <td> - </td>
+            <td>-</td>
             <td>Polarizado de Ventanas Laterales | Cristales traseros</td>
         </tr>
         <tr>
@@ -262,7 +323,7 @@
             <td>Paneles de ventana</td>
             <td>Iluminación led</td>
             <td>Cableado Automotriz (Anti Flama y Autoextinguible).</td>
-            <td> - </td>
+            <td>-</td>
             <td>Cortinas Corredizas para Ventanas</td>
         </tr>
         <tr>
@@ -276,7 +337,7 @@
         </tr>
         <tr>
             
-            <td> - </td>
+            <td>-</td>
             <td>Conexiones usb (6)</td>
             <td></td>
             <td></td>

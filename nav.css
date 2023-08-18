@@ -25,10 +25,10 @@
     padding: 2.5rem 8px 8px 8px;
     text-decoration: none;
     font-size: 1rem;
-    color: #818181;
+    color: #929292;
     display: block;
     opacity: 0;
-    transition: .1s ease;
+
 }
 
 .navbar .closebtn {
@@ -52,38 +52,33 @@
     transition: all 1s ease 1.2s;
 }
 .navbar :nth-child(7){
-    padding-top: 1rem;
-    padding-left: 70px;
+
     transition: all 1s ease 1.3s;
 }
 .navbar :nth-child(8){
-    padding-top: 1rem;
-    padding-left: 70px;
     transition: all 1s ease 1.4s;
 }
 .navbar :nth-child(9){
-    padding-top: 1rem;
-    padding-left: 70px;
     transition: all 1s ease 1.5s;
 }
 .navbar :nth-child(10){
-    padding-top: 1rem;
-    padding-left: 70px;
     transition: all 1s ease 1.5s;
 
+} 
+.navbar .sub {
+    padding-top: 1rem;
+    padding-left: 70px;
 }
+
 .navbar :nth-child(11){
     font-family: 'Great-Vibes';
     color: #f7f7f7;
     padding-top: 3rem;
-    margin-bottom: 0px;
-    float: auto;
 
     font-size: 2rem;
 
     transition: all 1s ease 1.8s;
 }
-
 
 .navbar .closebtn {
     position: absolute;

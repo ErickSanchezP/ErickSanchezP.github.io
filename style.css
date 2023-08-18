@@ -52,12 +52,48 @@ html {
 a {
     text-decoration: none;
     color: rgb(17, 17, 17);
-    transition: 80ms ease;
+    /*transition: 80ms ease;*/
 }
+.a-white-style {
+    color: var(--main-text-color);
+}
+
 h1 {
     font-family: 'Raleway', sans-serif;
     letter-spacing: normal;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
 }
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.button-style-dark {
+    background-color: var(--secondary-color-translucent);
+    color: var(--main-text-color);
+    padding: 1rem;
+    text-align: center;
+    border-radius: .8rem;
+
+    transition: 120ms ease;
+}
+.button-style-dark:hover {
+    filter: invert();
+}
+
+.centered-grid-bg-img {
+
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 header {
     color: var(--main-text-color);
     position: absolute;
@@ -73,7 +109,6 @@ header {
     background-color: var(--secondary-color-translucent);
     border-bottom: solid #f3f3f3ab 1px;
 }
-
 
 header .logo-title {
     display: flex;
@@ -104,14 +139,15 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(9, 9, 9);
-    color: rgb(208, 208, 208);
+    background-color: var(--secondary-color);
+    color: var(--main-text-color);
     justify-content: space-evenly;
     margin: auto;
     padding: 1rem;
 }
 footer .footer-logo {
     margin: auto;
+    padding: 1.5rem;
 }
 footer .footer-text {
     display: flex;
@@ -122,32 +158,20 @@ footer .footer-text {
 }
 
 footer a {
-    color: rgb(238, 238, 238);
+    color: var(--main-text-color)
 }
 
 /* SECTIONS  */
 
-
-
-/* botones */
-
 .navigation-btn {
-    color: var(--main-text-color);
-    text-align: center;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: var(--secondary-color-translucent);
     font-weight: 600;
     font-size: 1.5rem;
+    letter-spacing: 1px; 
 }
-.navigation-btn:hover{
-    filter: invert(100%);
-}
+
 /*fin de index*/
 
 /*inicio de conversiones*/
-
-
 
 /*inicio de proyectos especiales*/
 
@@ -197,6 +221,3 @@ footer a {
 .square:hover .seat-tittle {
     display: none;
 }
-
-/*galeria/museo*/
-
