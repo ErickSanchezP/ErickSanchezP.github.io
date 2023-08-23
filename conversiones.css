@@ -1,7 +1,7 @@
 .modelos-grid {
     --n: 4; /* number of rows*/
     --m: 2; /* number of columns */ 
-    --f: .3;
+    --f: .2;
     height: 100svh;
 
 

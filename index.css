@@ -125,9 +125,7 @@
 .img-bg-container {
     height: 100svh;
 
-    padding: 2rem 12% 0 12% ;
-
-    padding-bottom: 0;
+    padding: 2rem 12% ;
 
     display: flex;
     flex-direction: column;
@@ -166,12 +164,13 @@
 
     --n: 1; /* number of rows*/
     --m: 3; /* number of columns */ 
-    --f: .3;
+    --f: .15;
 
     height: 100svh;
     display: grid;
-    max-width: 100%;
+    gap: 0;
     grid-template-columns: repeat(var(--m), auto);
+    margin: 0 auto;
 }
 
 .img-container .img-grid {
@@ -179,27 +178,24 @@
     cursor: pointer;
     filter: grayscale(50%);
 
-    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: flex;
     flex-direction: column;
 
-    justify-content:center;
-
 }
-.img-container .img-grid a, .img-grid p {
+.img-grid:hover{
+    filter: grayscale(0);
+    width:  calc(100svh*var(--f)/var(--n));
+    height: calc(100svw*var(--f)/var(--m));
+}
+.img-container .img-grid a, .img-container .img-grid p {
     display: none;
     margin: auto;
     text-align: center;
 }
 .img-grid p{
     color: var(--main-text-color);
-    padding: 20%;
-
-}
-.img-grid:hover{
-    filter: grayscale(0);
-    width:  calc(100vh*var(--f)/var(--n));
-    height: calc(100vw*var(--f)/var(--m));
+    padding: 1rem;
 }
 .img-grid:hover a, .img-grid:hover p{
     display: block;
@@ -207,7 +203,7 @@
 
 .img-grid span{
     display: inline;
-    margin: auto;
+    margin: 50% 1rem 2rem;
     color: var(--main-text-color);
     font-size: 2rem;
     text-align: center;
