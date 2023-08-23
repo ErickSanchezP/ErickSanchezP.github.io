@@ -1,5 +1,24 @@
 let displacement = 30;
-/* Set the width of the side navigation to 250px */
+
+var lastScrollTop = 0;
+var delta = 5;
+var header = document.querySelector("header");
+
+window.addEventListener("scroll", function() {
+  var currentScrollTop = window.pageYOffset;
+  if (Math.abs(lastScrollTop - currentScrollTop) <= delta) {
+    return;
+  }
+  if (currentScrollTop > lastScrollTop) {
+    /* scrolling down */
+    header.classList.add("nav-up");
+  } else {
+    /* scrolling up */
+    header.classList.remove("nav-up");
+  }
+  lastScrollTop = currentScrollTop;
+});
+
 function openNav() {
   
   document.getElementById("sidenav").style.width = "350px";

@@ -96,18 +96,23 @@ h2 {
 
 header {
     color: var(--main-text-color);
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 90px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 
+    transition: top 0.2s ease-in-out;
+
     justify-content: center;
     align-items: center;
 
     background-color: var(--secondary-color-translucent);
     border-bottom: solid #f3f3f3ab 1px;
+}
+.nav-up{
+    top: -90px;
 }
 
 header .logo-title {
