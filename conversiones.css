@@ -137,12 +137,13 @@ td {
 }
 /*pagina opcion A*/
 
-h1 {
-    font-size: 4rem;
+h2 {
+    font-size: 3.5rem;
     padding-bottom: 1rem;
 }
-h2 {
-    font-size: 2rem;
+h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 p {
     font-size: 1.5rem;
