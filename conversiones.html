@@ -10,116 +10,57 @@
     <link rel="stylesheet" href="conversiones.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great_Vibes">
+    
+    <script src="https://kit.fontawesome.com/9e03033328.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="code.js"></script>
+    <script src="nav.js"></script>
+    <script src="./custom-elements.js"></script>
 </head>
 
-<nav class="navbar" id="sidenav">
-    
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    
-        <a class="navbar-link" id="nvl1" href="/index.html">Inicio</a>
-    
-        <a class="navbar-link" id="nvl2" href="/conversiones.html">Conversiones</a>
-    
-        <a class="navbar-link" id="nvl3" href="/asientos.html">Asientos</a>
-    
-        <a class="navbar-link" id="nvl4" href="/museo.html">Museo</a>
-    
-        <a class="navbar-link" id="nvl5" href="/proyectosEspeciales.html">Proyectos especiales</a>
-    
-        <a href="#" class="navbar-link" id="nvl6">Aula móvil</a>
-        <a href="#" class="navbar-link" id="nvl7">Consultorio móvil</a>
-        <a href="#" class="navbar-link" id="nvl8">Oficinas personalizadas</a>
-        <a href="#" class="navbar-link" id="nvl9">Más...</a>
-        
-        <a href="#" class="navbar-link" id="nvl10">ROYAL VAN</a>
-        <!-- <a href="#" class="navbar-link" id="nvl9">Más</a> -->
-</nav>  
-
 <body>
-    
-    <header>
-        <div>
-            <img src="assets/three-bars.svg" id="openMenu" class="om" onclick="openNav()">
-        </div>    
-        <div class="logo-title" >
-            <img src="assets/logo-blanco.png" href="index.html" t="Logo-MBDesign" class="logo">
-            <img src="assets/logo-letras-blancas.png" alt="MBDESIGN" class="title">
-        </div>
-        <div class="relleno">
-            <a>Find a dealer</a>
-        </div>
-    </header>
+    <app-nav></app-nav>  
+    <app-header></app-header>
 
     <section class="modelos-grid">
 
         <div class="modelo centered-grid-bg-img" id="sunrise"
-        style="background-image: url('https://acroadtrip.blob.core.windows.net/catalogo-imagenes/xl/RT_V_68d09907780048af8ecb4e58bf324327.jpg');"
-        > <a href="" class="model-link">Jac sunrise</a> <p></p></div>
+            style="background-image: url('https://acroadtrip.blob.core.windows.net/catalogo-imagenes/xl/RT_V_68d09907780048af8ecb4e58bf324327.jpg');"
+        >   <a href="" class="model-link">Jac sunrise</a>
+        </div>
         <div class="modelo centered-grid-bg-img" 
-        style="background-image: url('https://www.mercedes-benz.com.mx/vans/es/sprinter/panel-van/_jcr_content/stage-parsys/stage/image.mq6.jpg/1539686338000.jpg');"
-        ><a href="" class="model-link">Mercedez Sprinter</a></div>
+            style="background-image: url('https://www.mercedes-benz.com.mx/vans/es/sprinter/panel-van/_jcr_content/stage-parsys/stage/image.mq6.jpg/1539686338000.jpg');"
+        >   <a href="" class="model-link">Mercedez Sprinter</a>
+        </div>
         <div class="modelo centered-grid-bg-img" 
-        style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional/nafta/fiat/es_mx/2023/Ducato-2023/03-Ducato-Galerias/FIAT-DUCATO-2023-GALERIA-EXTERIOR-2.jpg.img.1440.jpg');
-        "
-        ><a class="model-link" href="/ducato.html">Fiat Ducato</a></div>
+            style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional/nafta/fiat/es_mx/2023/Ducato-2023/03-Ducato-Galerias/FIAT-DUCATO-2023-GALERIA-EXTERIOR-2.jpg.img.1440.jpg');"
+        >   <a class="model-link" href="/ducato.html">Fiat Ducato</a>
+        </div>
         <div class="modelo centered-grid-bg-img" 
-        style="background-image: url('https://img.remediosdigitales.com/be806d/peugeot-partner-2020_/1366_2000.jpg');"
-        ><a href="" class="model-link">Peugeot Partner</a></div>
-            <div class="title" style="text-align: center;"><h1>Modelos disponibles</h1></div>
+            style="background-image: url('https://img.remediosdigitales.com/be806d/peugeot-partner-2020_/1366_2000.jpg');"
+        >   <a href="" class="model-link">Peugeot Partner</a></div>
+            <div class="title" style="text-align: center;"><h1>Modelos disponibles</h1>
+        </div>
         <div class="modelo centered-grid-bg-img" 
-        style="background-image: url('https://www.chevrolet.com.mx/content/dam/chevrolet/na/mx/es/index/vans-and-trucks/2023-tornado-van/colorizer/jellys/blanco.jpg?imwidth=1200');"
-        ><a href="" class="model-link">Chevrolet Tornado</a></div>
+            style="background-image: url('https://www.chevrolet.com.mx/content/dam/chevrolet/na/mx/es/index/vans-and-trucks/2023-tornado-van/colorizer/jellys/blanco.jpg?imwidth=1200');"
+        >   <a href="" class="model-link">Chevrolet Tornado</a>
+        </div>
         <div class="modelo centered-grid-bg-img" 
-        style="background-image: url('https://irp.cdn-website.com/9d20107d/dms3rep/multi/Toano-perspective-640w.webp');"
-        ><a href="" class="model-link">Foton Toano</a></div>
+            style="background-image: url('https://irp.cdn-website.com/9d20107d/dms3rep/multi/Toano-perspective-640w.webp');"
+        >   <a href="" class="model-link">Foton Toano</a>
+        </div>
         <!-- <div class="modelo" 
         style="background-image: url('https://img.remediosdigitales.com/e69b9f/sunray_pass2-copia/1366_2000.jpg');" 
         ><a href="" class="navigation-btn">Jac sunrise</a></div> --> <!-- sunrise -->
         <div class="modelo centered-grid-bg-img" 
-        style="background-image: url('https://assets.volkswagen.com/is/image/volkswagenag/crafter-cargo-van_galeria_vista-frontal_16x9_2048x1152px_oct2021?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyODAmaGVpPTcyMCZhbGlnbj0wLjAwLDAuMDAmYmZjPW9mZiY5ZjIy');" 
-        ><a href="" class="model-link">Volswagen Crafter</a></div> <!-- vagen 3.5 -->
+            style="background-image: url('https://assets.volkswagen.com/is/image/volkswagenag/crafter-cargo-van_galeria_vista-frontal_16x9_2048x1152px_oct2021?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyODAmaGVpPTcyMCZhbGlnbj0wLjAwLDAuMDAmYmZjPW9mZiY5ZjIy');" 
+        >   <a href="" class="model-link">Volswagen Crafter</a>
+        </div> <!-- vagen 3.5 -->
     
     </section>
 
-    <footer>
-    
-        <div class="footer-logo">
-            <img src="assets/logo-blanco.png" alt="Logo-MBDesign" class="logo">
-        </div>
-    
-        <hr style="width: 100%; height: 1px; color: var(--main-text-color); background-color: var(--main-text-color);">
-    
-        <div class="footer-text">
-    
-            <div class="foot-column">
-                <p>INFORMACIÓN ADICIONAL</p>
-                
-                <ul style="list-style-type: none;">
-                    <li><a>CONTACTO</a></li>
-                    <li><a>LEGAL</a></li>
-                    <li><a>CERTIFICACIONES</a></li>
-                </ul>
-                
-            </div>
-            
-            <div class="foot-column">
-                
-                <p>REDES SOCIALES</p>
-                
-                <ul style="list-style-type: none;">
-                    <li><a>TIKTOK </a> <i class="fa fa-tiktok"></i></li>
-                    <li><a>INSTAGRAM </a><i class="fa fa-instagram"></i></li>
-                    <li><a href="">FACEBOOK</a> <i class="fa fa-facebook-square"></i>
-                    <li><a href="">TWITTER</a> <i class="fa fa-twitter-square"></i>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    
-    </footer>
+    <app-footer></app-footer>
 
 </body>
 </html>

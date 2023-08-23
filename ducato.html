@@ -12,50 +12,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great_Vibes">
     <script src="https://kit.fontawesome.com/9e03033328.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="code.js"></script>
+    <script src="nav.js"></script>
+    <script src="./custom-elements.js"></script>
 
 </head>
 <body>
-<nav class="navbar" id="sidenav">
-
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<app-nav></app-nav>
+<app-header></app-header>
     
-        <a class="navbar-link" id="nvl1" href="/index.html">Inicio</a>
-    
-        <a class="navbar-link" id="nvl2" href="/conversiones.html">Conversiones</a>
-    
-        <a class="navbar-link" id="nvl3" href="/asientos.html">Asientos</a>
-    
-        <a class="navbar-link" id="nvl4" href="/museo.html">Museo</a>
-    
-        <a class="navbar-link" id="nvl5" href="/proyectosEspeciales.html">Proyectos especiales</a>
-    
-        <a href="#" class="navbar-link" id="nvl6">Aula móvil</a>
-        <a href="#" class="navbar-link" id="nvl7">Consultorio móvil</a>
-        <a href="#" class="navbar-link" id="nvl8">Oficinas personalizadas</a>
-        <a href="#" class="navbar-link" id="nvl9">Más...</a>
-        
-        <a href="#" class="navbar-link" id="nvl10" style="color: #FFD700;">ROYAL VAN</a>
-        <!-- <a href="#" class="navbar-link" id="nvl9">Más</a> -->
-</nav> 
-<header>
-    <div>
-        <img src="assets/three-bars.svg" id="openMenu" class="om" onclick="openNav()">
-    </div>    
-    <div class="logo-title" >
-        <img src="assets/logo-blanco.png" href="index.html" t="Logo-MBDesign" class="logo">
-        <img src="assets/logo-letras-blancas.png" alt="MBDESIGN" class="title">
-    </div>
-    <div class="relleno">
-        <a>Find a dealer</a>
-    </div>
-</header>
-    
-<div class="banner"
+<div class="banner centered-grid-bg-img"
 style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional/nafta/fiat/es_mx/2023/Ducato-2023/03-Ducato-Galerias/FIAT-DUCATO-2023-GALERIA-EXTERIOR-2.jpg.img.1440.jpg');"
 >
 
-    <div class="banner_option" id="estemismo"> <a href="#OA" onclick="showTable()">Preconfiguración A</a> </div>
+    <div class="banner_option"><a href="#OA" onclick="showTable()">Preconfiguración A</a> </div>
     <div class="banner_option"><a href="#OB">Preconfiguración B</a> </div>
     <div class="banner_option"><a href="#OC">Luxury</a> </div>
 
@@ -83,83 +52,78 @@ style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional
     
 <div class="personalizer">
         
-    <h1>Personaliza tu van</h1>
+    <h2>Personaliza tu van</h2>
     <div class="form-container">
-    <form class="form-personalizer" action=""><!--TODO-->
-        <input id="pisos-madera" name="pisos-madera" type="checkbox">
-        <label for="pisos-madera">Pisos de madera</label><br>
-        <input id="lino-duela" name="lino-duela" type="checkbox">
-        <label for="lino-duela">Linoleum tipo duela</label><br>
-        <input id="mdf" name="mdf" type="checkbox">
-        <label for="mdf">MDF en puerta lateral</label><br>
-        <input id="estribo" name="estribo" type="checkbox">
-        <label for="estribo">Estribo en zona de pasajeros</label><br>
-        <input id="portabultos" name="portabultos" type="checkbox">
-        <label for="portabultos">Portabultos en pared lateral izquierda</label><br>
-        <input id="led-portabultos" name="led-portabultos" type="checkbox">
-        <label for="led-portabultos">Luces led en portabultos</label><br>
-        <input id="paneles-ventana" name="paneles-ventana" type="checkbox">
-        <label for="paneles-ventana">Paneles de ventana</label><br>
-        <input id="paneles-pared" name="paneles-pared" type="checkbox">
-        <label for="paneles-pared">Paneled de pared</label><br>
-        <input id="usb" name="usb" type="checkbox">
-        <label for="usb">Conexiones USB</label><br>
-        <input id="tablero-madera" name="tablero-madera" type="checkbox">
-        <label for="tablero-madera">Estructura para maletero con madera</label><br>
-        <input id="alfombrado" name="alfombrado" type="checkbox">
-        <label for="alfombrado">Alfombrado automotriz</label><br>
-        <input id="iluminacion-led" name="iluminacion-led" type="checkbox">
-        <label for="iluminacion-led">Iluminación LED</label><br>
-        <input id="estribo" name="estribo" type="checkbox">
-        <label for="estribo">Estribo trasero</label><br>
-        <input id="estereo-doble-d" name="estereo-doble-d" type="checkbox">
-        <label for="estereo-doble-d">Estero Doble Din (Entrada USB, AUX Y BT)</label><br>
-        <input id="bocinas-9x7" name="bocinas-9x7" type="checkbox">
-        <label for="bocinas-9x7">Bocinas 9X7 (4) y Amplificador.</label><br>
-        <input id="cableado-automotriz" name="cableado-automotriz" type="checkbox">
-        <label for="cableado-automotriz">Cableado Automotriz (Anti Flama y Autoextinguible).</label><br>
-        <input id="camara-reversa" name="camara-reversa" type="checkbox">
-        <label for="camara-reversa">Cámara de reversa</label><br>
-        <input id="polarizado" name="polarizado" type="checkbox">
-        <label for="polarizado">Polarizado de Ventanas Laterales | traseros</label><br>
-        <input id="cortinas" name="cortinas" type="checkbox">
-        <label for="cortinas">Cortinas corredizas para Ventanas</label><br>
-        <input id="entretenimiento" name="entretenimiento" type="checkbox">
-        <label for="entretenimiento">Centro de Entretenimiento (Smart Tv con Blu-Ray)</label><br>
-        <input id="escalon-antiderrapante" name="escalon-antiderrapante" type="checkbox">
-        <label for="escalon-antiderrapante">Escalon lateral fijo con Antiderrapante</label><br>
-        
-        <label for="asientos"
-        style="">Cantidad de asientos</label><br>
-        <select name="asientos" id="asientos"
-        style="padding: 1rem;">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9+">9+</option>
-        </select>   <br><br>
+        <form class="form-personalizer" action=""><!--TODO-->
+            <input id="pisos-madera" name="pisos-madera" type="checkbox">
+                <label for="pisos-madera">Pisos de madera</label><br>
+            <input id="lino-duela" name="lino-duela" type="checkbox">
+                <label for="lino-duela">Linoleum tipo duela</label><br>
+            <input id="mdf" name="mdf" type="checkbox">
+                <label for="mdf">MDF en puerta lateral</label><br>
+            <input id="estribo" name="estribo" type="checkbox">
+                <label for="estribo">Estribo en zona de pasajeros</label><br>
+            <input id="portabultos" name="portabultos" type="checkbox">
+                <label for="portabultos">Portabultos en pared lateral izquierda</label><br>
+            <input id="led-portabultos" name="led-portabultos" type="checkbox">
+                <label for="led-portabultos">Luces led en portabultos</label><br>
+            <input id="paneles-ventana" name="paneles-ventana" type="checkbox">
+                <label for="paneles-ventana">Paneles de ventana</label><br>
+            <input id="paneles-pared" name="paneles-pared" type="checkbox">
+                <label for="paneles-pared">Paneled de pared</label><br>
+            <input id="usb" name="usb" type="checkbox">
+                <label for="usb">Conexiones USB</label><br>
+            <input id="tablero-madera" name="tablero-madera" type="checkbox">
+                <label for="tablero-madera">Estructura para maletero con madera</label><br>
+            <input id="alfombrado" name="alfombrado" type="checkbox">
+                <label for="alfombrado">Alfombrado automotriz</label><br>
+            <input id="iluminacion-led" name="iluminacion-led" type="checkbox">
+                <label for="iluminacion-led">Iluminación LED</label><br>
+            <input id="estribo-trasero" name="estribo-trasero" type="checkbox">
+                <label for="estribo-trasero">Estribo trasero</label><br>
+            <input id="estereo-doble-d" name="estereo-doble-d" type="checkbox">
+                <label for="estereo-doble-d">Estero Doble Din (Entrada USB, AUX Y BT)</label><br>
+            <input id="bocinas-9x7" name="bocinas-9x7" type="checkbox">
+                <label for="bocinas-9x7">Bocinas 9X7 (4) y Amplificador.</label><br>
+            <input id="cableado-automotriz" name="cableado-automotriz" type="checkbox">
+                <label for="cableado-automotriz">Cableado Automotriz (Anti Flama y Autoextinguible).</label><br>
+            <input id="camara-reversa" name="camara-reversa" type="checkbox">
+                <label for="camara-reversa">Cámara de reversa</label><br>
+            <input id="polarizado" name="polarizado" type="checkbox">
+                <label for="polarizado">Polarizado de Ventanas Laterales | traseros</label><br>
+            <input id="cortinas" name="cortinas" type="checkbox">
+                <label for="cortinas">Cortinas corredizas para Ventanas</label><br>
+            <input id="entretenimiento" name="entretenimiento" type="checkbox">
+                <label for="entretenimiento">Centro de Entretenimiento (Smart Tv con Blu-Ray)</label><br>
+            <input id="escalon-antiderrapante" name="escalon-antiderrapante" type="checkbox">
+                <label for="escalon-antiderrapante">Escalon lateral fijo con Antiderrapante</label><br>
+            
+            <label for="asientos">Cantidad de asientos</label><br>
+                <select name="asientos" id="asientos" style="padding: 1rem;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9+">9+</option>
+                </select>   <br><br>
 
-        <label for="comment"
-        >Comentarios o dudas adicionales</label><br>
-        <input type="text" id="comment" name="comment" value="" 
-        placeholder="Cuéntanos que necesitas"><br>
+            <label for="comment">Comentarios o dudas adicionales</label><br>
+                <input type="text" id="comment" name="comment" placeholder="Cuéntanos que necesitas"><br>
 
-        <input class="config-submit" type="submit" value="Enviar configuración a un vendedor"> 
-    </form>
-
+            <input class="config-submit" type="submit" value="Enviar configuración a un vendedor"> 
+        </form>
     </div>
 </div>
 
-    <h1 style="text-align: center;">Configuraciones</h1>
-    <h2 style="text-align: center;">Nuestras opciones preconfiguradas son personalizables</h2>
+<h2 style="text-align: center;">Configuraciones</h2>
+<h3 style="text-align: center;">Nuestras opciones preconfiguradas son personalizables</h3>
 
-    <div class="desc" id="tablaA"><!--tabla opcion A-->
-    <h1 id="OA">Opción A</h1>
+<div class="desc" id="tablaA"><!--tabla opcion A-->
+    <h2 id="OA">Opción A</h2>
         <table class="table-description" id="tableA">
         <tr>
             <th>Pisos</th>
@@ -188,12 +152,11 @@ style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional
             <td>-</td>
             <td>-</td>
         </tr>
-
     </table>
 </div>
 
 <div id="OB" class="desc"><!--tabla opcion B-->
-    <h1>Opción B</h1>
+    <h2>Opción B</h2>
     <table class="table-description" id="tableB">
         <tr>
             <th>Pisos</th>
@@ -227,13 +190,11 @@ style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional
             <td>Estribo trasero</td>
             <td>-</td>
         </tr>
-
-        
     </table>
 </div>
 
 <div id="OC" class="desc"><!--tabla opcion C-->
-    <h1>Luxury Van</h1>
+    <h2>Luxury Van</h2>
     <table class="table-description" id="tableC">
         <tr>
             <th>Pisos</th>
@@ -286,8 +247,6 @@ style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional
             <td>-</td>
             <td>Escalon lateral fijo con Antiderrapante</td>
         </tr>
-        
-        
     </table>
 </div>
 
@@ -345,46 +304,9 @@ style="background-image: url('https://www.fiat.com.mx/content/dam/cross-regional
             <td>Escalon lateral fijo con Antiderrapante</td>
         </tr>
         
-        
     </table>
 </div>
 
-    <footer>
-    
-        <div class="footer-logo">
-            <img src="assets/logo-blanco.png" alt="Logo-MBDesign" class="logo">
-        </div>
-    
-        <hr style="width: 100%; height: 1px; color: var(--main-text-color); background-color: var(--main-text-color);">
-    
-        <div class="footer-text">
-    
-            <div class="foot-column">
-                <p>INFORMACIÓN ADICIONAL</p>
-                
-                <ul style="list-style-type: none;">
-                    <li><a>CONTACTO</a></li>
-                    <li><a>LEGAL</a></li>
-                    <li><a>CERTIFICACIONES</a></li>
-                </ul>
-                
-            </div>
-            
-            <div class="foot-column">
-                
-                <p>REDES SOCIALES</p>
-                
-                <ul style="list-style-type: none;">
-                    <li><a>TIKTOK </a> <i class="fa fa-tiktok"></i></li>
-                    <li><a>INSTAGRAM </a><i class="fa fa-instagram"></i></li>
-                    <li><a href="">FACEBOOK</a> <i class="fa fa-facebook-square"></i>
-                    <li><a href="">TWITTER</a> <i class="fa fa-twitter-square"></i>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    
-    </footer>
+<app-footer></app-footer>
 </body>
 </html>

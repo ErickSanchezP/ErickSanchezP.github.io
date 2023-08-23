@@ -30,7 +30,7 @@ scroll-snap-align: start;
 :root {
     --main-text-color: #f3f3f3;
     --secondary-color: #171717;
-    --secondary-color-translucent: #171717ab;
+    --secondary-color-translucent: #171717e7;
 }
 
 html {
@@ -58,7 +58,7 @@ a {
     color: var(--main-text-color);
 }
 
-h1 {
+h2 {
     font-family: 'Raleway', sans-serif;
     letter-spacing: normal;
     font-size: 3rem;

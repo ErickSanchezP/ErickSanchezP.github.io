@@ -64,9 +64,6 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(3, auto);
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 .banner_option {
     width: 0;
@@ -119,9 +116,6 @@ td {
     padding: 9px;
 }
 
-.desc table {
-
-}
 
 #tableD {
     display: none;
@@ -133,7 +127,6 @@ td {
         height: 250px;
     }
 }
-
 
 .model-link {
     color: var(--main-text-color);
