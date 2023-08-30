@@ -18,10 +18,25 @@
     }
 }
 
+/*AUTOSCROLL ONLY ON LANDING PAGE*/
+main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100svh;
+}
+section {
+    scroll-snap-align: start;
+    width: 100%;
+}
+/*end of autoscroll*/
+
+
 .top {
     display: flex;
     flex-flow: column;
     height: 100svh;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .scroll-btn {
@@ -125,7 +140,7 @@
 .img-bg-container {
     height: 100svh;
 
-    padding: 2rem 12% ;
+    padding: 0 12% 0 ;
 
     display: flex;
     flex-direction: column;
@@ -134,12 +149,17 @@
 
     color: var(--main-text-color);
 }
+.img-bg-container article{
+    align-items: center;
+}
 .img-bg-container h2{
-    padding-top: 85px;
+    padding-top: calc(85px + 2rem);
 }
 .img-bg-container hr{
     color: var(--main-text-color);
     width: 750px;
+    margin-top: 0;
+    margin: auto;
 }
 @media only screen and (max-width:719px){
     .img-bg-container hr {
@@ -157,7 +177,7 @@
     line-height: 1.4;
 
     padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .img-container {
@@ -170,13 +190,12 @@
     display: grid;
     gap: 0;
     grid-template-columns: repeat(var(--m), auto);
-    margin: 0 auto;
+    
 }
 
 .img-container .img-grid {
 
     cursor: pointer;
-    filter: grayscale(50%);
 
     transition: .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: flex;
@@ -184,26 +203,35 @@
 
 }
 .img-grid:hover{
-    filter: grayscale(0);
+    background-image: none;
     width:  calc(100svh*var(--f)/var(--n));
     height: calc(100svw*var(--f)/var(--m));
 }
-.img-container .img-grid a, .img-container .img-grid p {
+.img-container .img-grid article {
     display: none;
-    margin: auto;
+    padding: 1.5rem;
     text-align: center;
-}
-.img-grid p{
+    background-color: #1717179a;
     color: var(--main-text-color);
-    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+
+    transition: 600ms ease-in-out;
 }
-.img-grid:hover a, .img-grid:hover p{
-    display: block;
+.img-container .img-grid article p{
+    font-size: 1.5rem;
 }
 
-.img-grid span{
+.img-grid:hover article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-grid article span{
     display: inline;
-    margin: 50% 1rem 2rem;
+    padding-top: 20%;
     color: var(--main-text-color);
     font-size: 2rem;
     text-align: center;
