@@ -157,7 +157,7 @@ header {
 
     background-color: var(--secondary-color-translucent);
     border-bottom: solid #f3f3f3ab 1px;
-    z-index: 2;
+    z-index: 1;
 }
 .nav-up{
     top: -90px;
