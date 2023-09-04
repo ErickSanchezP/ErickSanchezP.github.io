@@ -194,6 +194,7 @@ footer {
     justify-content: space-evenly;
     margin: auto;
     padding: 1rem;
+    z-index: -1;
 }
 footer .footer-logo {
     margin: auto;
@@ -209,53 +210,4 @@ footer .footer-text {
 
 .navigation-btn {
     letter-spacing: 1px; 
-}
-
-/*inicio de proyectos especiales*/
-
-.grid {
-    padding-top: 12.5vh;
-    width: 100%;
-    display: flexbox;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-count: 2;
-    height: 95vh;
-}
-
-.grid span {
- background: #f6f6f617;
- border-radius: 4px;
-
-}
-
-.square {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
-    overflow: hidden;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    transition: 70ms ease;
-}
-
-.seat-desc{
-    display: none;
-}
-
-.square:hover {
-    height: 40%;
-    opacity: 90%;
-}
-.square:hover .seat-desc{
-    display: block;
-}
-.square:hover .seat-tittle {
-    display: none;
 }
