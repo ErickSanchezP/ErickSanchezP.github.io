@@ -1,15 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Bebas+Neue&family=Exo:wght@200;500&family=Gruppo&family=Hind+Siliguri:wght@300&family=Nanum+Gothic:wght@400;700&family=Oswald:wght@200;400&family=Saira+Condensed:wght@200;300&family=Saira:wght@100;200;300;400&family=Titillium+Web:wght@300;400&display=swap');
+
+:root {
+    --main-text-color: #f3f3f3;
+    --secondary-color: #171717;
+    --secondary-color-translucent: #171717e7;
+    /*--header-font-family: 'Bebas Neue';
+    --paragraph-font-family:'Exo';*/
+    /*--header-font-family: 'Gruppo', sans-serif;
+    --paragraph-font-family:'Saira', sans-serif;
+    --alt-font-family:'Bebas Neue', sans-serif;*/
+    /*--header-font-family: 'Bebas Neue', sans-serif;
+    --paragraph-font-family:'Saira', sans-serif;
+    --alt-font-family:'Gruppo', sans-serif;*/
+    /*--header-font-family: 'saira condensed', sans-serif;
+    --paragraph-font-family:'Exo', sans-serif;
+    --alt-font-family:'Gruppo', sans-serif;*/
+    /*--header-font-family: 'saira condensed', sans-serif;
+    --paragraph-font-family:'Saira', sans-serif;
+    --alt-font-family:'Gruppo', sans-serif;*/
+    --header-font-family: 'saira condensed', sans-serif;
+    --paragraph-font-family:'Saira', sans-serif;
+    --alt-font-family:'Exo', sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
-    font-size: 16px;
-
-    -webkit-user-drag: none;
+    font-size: 24px;
+    color: var(--main-text-color);
+}
+.heading {
+    font-family: var(--header-font-family);
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+.top h1 {
+    font-size: 4rem;
+    letter-spacing: 12px;
+}
+h2 {
+    letter-spacing: 10px;
+    padding-bottom: 1rem;
+    font-size: 5rem;
+}
+h3 {
+    letter-spacing: 5px;
 }
 
-/* TODO scroll automatico con rueda */
+p{
+    font-family: var(--paragraph-font-family);
+    letter-spacing: 4px;
+    line-height: 1.7rem;
+    font-weight: 300;
+}
+a {
+    font-family: var(--alt-font-family);
+    cursor: pointer;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    text-align: justify;
+}
 
 .hidden {
     opacity: 0;
@@ -32,14 +87,13 @@
 
 .arrow {
     position: relative;
-
 }
 .arrow span {
     display: block;
-    width: 2rem;
-    height: 2rem;
-    border-bottom: 5px solid var(--secondary-color);
-    border-right: 5px solid var(--secondary-color);
+    width: 1.3rem;
+    height: 1.3rem;
+    border-bottom: 1px solid var(--main-text-color);
+    border-right: 1px solid var(--main-text-color);
     animation: scroll1 2.5s infinite;
     margin: 0;
 }
@@ -50,79 +104,38 @@
 .arrow span:nth-child(3) {
     animation-delay: -.4s;
 }
-
 @keyframes scroll1 {
     0% { 
         opacity: 1;
         transform: rotate(45deg) translate(-50px, -50px);
-        border-bottom: 5px solid #171717;
-        border-right: 5px solid #171717;
-    }
-    50% {
-        opacity: .6;
     }
     100% {
         opacity: 0;
         transform: rotate(45deg) translate(-15px, -15px);
     }
-
 }
 
-@media only screen and (max-width: 719px) {
+@media only screen and (max-width: 768px) {
     * {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
-:root {
-    --main-text-color: #f3f3f3;
-    --secondary-color: #171717;
-    --secondary-color-translucent: #171717e7;
-}
-
-html {
-    scroll-behavior: smooth;
-    text-align: justify;
-}
-
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
 }
 ::-webkit-scrollbar-thumb {
     background: #101010;
-    border-radius: 1px;
 }
 ::-webkit-scrollbar-track {
     opacity: 0%;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(17, 17, 17);
-    /*transition: 80ms ease;*/
-}
-.a-white-style {
-    color: var(--main-text-color);
-}
-
-h2 {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: normal;
-    font-size: 3rem;
-    text-align: center;
-    padding-bottom: 1rem;
-}
-h2 {
-    font-family: 'Raleway', sans-serif;
-}
-
 .button-style-dark {
     background-color: var(--secondary-color-translucent);
-    color: var(--main-text-color);
-    padding: 1rem;
+    padding: .8rem;
     text-align: center;
     border-radius: .8rem;
-
     transition: 120ms ease;
 }
 .button-style-dark:hover {
@@ -130,80 +143,61 @@ h2 {
 }
 
 .centered-grid-bg-img {
-
     width: 0;
     height: 0;
     min-height: 100%;
     min-width: 100%;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 header {
-    color: var(--main-text-color);
+    background-color: var(--secondary-color-translucent);
     position: fixed;
     top: 0;
     height: 90px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
     transition: top 0.2s ease-in-out;
-
-    justify-content: center;
     align-items: center;
-
-    background-color: var(--secondary-color-translucent);
     border-bottom: solid #f3f3f3ab 1px;
     z-index: 1;
 }
 .nav-up{
     top: -90px;
 }
-
 header .logo-title {
     display: flex;
     flex-direction: column;
-    margin: auto; 
-
-    padding-top: 5px;
+    margin: auto;
 }
-header .relleno a{
-    color: var(--main-text-color);
+header .header-right a{
     float: right;
     padding-right: 1rem;
-    font-weight: 600;
-    cursor: pointer;
 }
-
 .logo {
     margin: auto;
     height: 45px;
 }
-.title {
-    margin: auto;
+header .title {
     height: 24px;
 }
 
-
 footer {
+    background-color: var(--secondary-color);
     bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary-color);
-    color: var(--main-text-color);
     justify-content: space-evenly;
     margin: auto;
-
-    padding: 0 1rem 1rem;
-
+    padding: 1rem;
 }
 footer .footer-logo {
     margin: auto;
-    padding: 1.5rem;
+    padding-bottom: 1rem;
 }
 footer .footer-text {
     display: flex;
@@ -213,21 +207,9 @@ footer .footer-text {
     line-height: +3;
 }
 
-footer a {
-    color: var(--main-text-color)
-}
-
-/* SECTIONS  */
-
 .navigation-btn {
-    font-weight: 600;
-    font-size: 1.5rem;
     letter-spacing: 1px; 
 }
-
-/*fin de index*/
-
-/*inicio de conversiones*/
 
 /*inicio de proyectos especiales*/
 

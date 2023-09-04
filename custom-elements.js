@@ -2,14 +2,14 @@ class AppHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <header>
-                <div>
+                <div class="header-left">
                     <img src="assets/three-bars.svg" id="openMenu" class="om" onclick="openNav()">
                 </div>    
                 <div class="logo-title" >
                     <img src="assets/logo-blanco.png" href="index.html" t="Logo-MBDesign" class="logo">
                     <img src="assets/logo-letras-blancas.png" alt="MBDESIGN" class="title">
                 </div>
-                <div class="relleno">
+                <div class="header-right">
                     <a>Find a dealer</a>
                 </div>
             </header>
@@ -22,11 +22,11 @@ class AppFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <footer>
-                <div class="footer-logo">
+                <div class="footer-logo" >
                     <img src="assets/logo-blanco.png" alt="Logo-MBDesign" class="logo">
                 </div>
     
-                <hr style="width: 100%; height: 1px; color: var(--main-text-color); background-color: var(--main-text-color);">
+                <hr style="width: 100%; height: 1px; background-color: var(--main-text-color);">
     
                 <div class="footer-text">
     
@@ -48,15 +48,13 @@ class AppFooter extends HTMLElement {
                         <ul style="list-style-type: none;">
                             <li><a>TIKTOK </a> <i class="fa fa-tiktok"></i></li>
                             <li><a>INSTAGRAM </a><i class="fa fa-instagram"></i></li>
-                            <li><a href="">FACEBOOK</a> <i class="fa fa-facebook-square"></i>
-                            <li><a href="">TWITTER</a> <i class="fa fa-twitter-square"></i>
+                            <li><a>FACEBOOK</a> <i class="fa fa-facebook-square"></i>
+                            <li><a>TWITTER</a> <i class="fa fa-twitter-square"></i>
                             </li>
                         </ul>
-                    
                     </div>
                 </div>
-            </footer>
-        `
+            </footer>`
     }
 }
 window.customElements.define('app-footer', AppFooter)

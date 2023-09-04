@@ -15,16 +15,15 @@
     left: 0;
     height: 100%;
     padding-top: 60px;
-    background-color: rgb(17, 17, 17);
+    background-color: var(--secondary-color-translucent);
     z-index: 2;
     overflow-x: hidden;
     transition: .7s ease;
 }
 
 .navbar a {
-    padding: 2.5rem 8px 8px 8px;
+    padding: 1.5rem 8px 8px 8px;
     text-decoration: none;
-    font-size: 1rem;
     color: #929292;
     display: block;
     opacity: 0;
@@ -36,7 +35,7 @@
     margin-top: 20px;
 }
 .navbar :nth-child(2){
-    margin-top: 1rem;
+    margin-top: .7rem;
     transition: all 1s ease .2s;
 }
 .navbar :nth-child(3){

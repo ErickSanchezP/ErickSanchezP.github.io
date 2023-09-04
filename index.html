@@ -10,21 +10,20 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="nav.css">
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great_Vibes">
-    
     <script src="https://kit.fontawesome.com/9e03033328.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--footer media logos-->
     <script src="./custom-elements.js"></script>
     <script defer src="nav.js"></script>
+    <script defer src="animation.js"></script>
 </head>
 
 <body>
     <app-nav> </app-nav>
     <app-header></app-header>
-<main>
+<section>
+<div class="top" id="index01">
 
-<section class="top" id="index01">
+    <h1 class="hidden heading">Especialistas en Custom Vans</h1>
 
     <div class="arrow">
         <span></span>
@@ -32,24 +31,24 @@
         <span></span>
     </div>
     
-    <video autoplay muted loop id="myVideo" class="bgvid">
+    <video autoplay muted loop id="myVideo" class="bgvid hidden">
         <source src="assets/Blackstar.mp4" type="video/mp4">
     </video>
 
-</section>
+</div>
 
-<section class="container" id="index02"> 
+<div class="container scroll-container" id="index02"> 
 
     <div class="placeholder"></div>
 
-    <div class="image-information">
+    <div class="image-information hidden">
 
         <div class="img-conversiones" 
             style="background-image: url(https://images.pexels.com/photos/11139392/pexels-photo-11139392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
         </div>
 
-        <article class="information">
-            <h2>CONVERSIONES AUTOMOTRICES</h2>
+        <div class="information">
+            <h2 class="heading">CONVERSIONES AUTOMOTRICES</h2>
             <p>MB Design es especialista en la conversión
                 de vans para satisfacer las necesidades
                 específicas de cada cliente. Ofrecemos una
@@ -62,24 +61,24 @@
                 ofrecen estilo, comodidad y seguridad para
                 nuestros clientes.</p>
             <a href="/conversiones.html" class="navigation-btn button-style-dark">Conoce nuestras opciones</a>
-        </article>
+        </div>
         
     </div>
 
-    <div class="arrow">
+    <div class="arrow" style="filter: invert(1);">
         <span></span>
         <span></span>
         <span></span>
     </div>
-</section>
+</div>
 
-<section class="img-bg-container centered-grid-bg-img" id="index03"
+<div class="img-bg-container centered-grid-bg-img scroll-container" id="index03"
 style="background-image: url('https://images.unsplash.com/photo-1611251953880-611e66e904e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');"
 >
     <article>
-    <h2>MANUFACTURA DE ASIENTOS</h2>
+    <h2 class="heading hidden ">MANUFACTURA DE ASIENTOS</h2>
     <hr>
-    <p>En MBDesign fabricamos asientos especializados para equipar vans,
+    <p class="hidden">En MBDesign fabricamos asientos especializados para equipar vans,
         ofreciendo una amplia gama de opciones personalizables para 
         satisfacer las necesidades de cada cliente. Los asientos se pueden
         personalizar con patrones y logos impresos,
@@ -97,21 +96,21 @@ style="background-image: url('https://images.unsplash.com/photo-1611251953880-61
     <a href="/asientos.html" class="navigation-btn button-style-dark" id="nav-btn-asientos">
         Explora nuestro catálogo
     </a>
-    <div class="arrow" style="filter: invert(1);">
+    <div class="arrow">
         <span></span>
         <span></span>
         <span></span>
     </div>
 
-</section>
+</div>
 
-<section class="img-container" id="index04"> 
+<div class="img-container scroll-container" id="index04">
     
     <div class="img-grid  centered-grid-bg-img" 
     style="background-image: url('https://images.pexels.com/photos/11139392/pexels-photo-11139392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"
     >   
         <article>
-        <span>TOURING VAN</span>
+        <h3 class="heading">TOURING VAN</h3>
         <p>Nos especializamos en el carrozado de vans turísticas. Desde versiones estándar hasta lujosas, tenemos todo lo que necesitas para una experiencia de viaje excepcional.</p>
         <a class="navigation-btn button-style-dark">Más información</a>
         </article>
@@ -120,7 +119,7 @@ style="background-image: url('https://images.unsplash.com/photo-1611251953880-61
     style="background-image:url('https://images.pexels.com/photos/9577104/pexels-photo-9577104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"
     >   
         <article>
-        <span>ROYAL VAN</span>
+        <h3 class="heading">ROYAL VAN</h3>
         <p>Descubre el máximo lujo sobre ruedas con nuestras exclusivas Royal Vans en
             MB Design. Estas conversiones de lujo brindan una experiencia de viaje inigualable. 
             </p>
@@ -131,7 +130,7 @@ style="background-image: url('https://images.unsplash.com/photo-1611251953880-61
     style="background-image:url('https://images.pexels.com/photos/11139346/pexels-photo-11139346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"
     >
         <article>
-        <span>PROYECTOS ESPECIALES</span>
+        <h3 class="heading">PROYECTOS ESPECIALES</h3>
         <p>Oficinas para servicios de gobierno y municipios
             Consultorios Moviles<br>
             Aulas Moviles<br>
@@ -145,8 +144,8 @@ style="background-image: url('https://images.unsplash.com/photo-1611251953880-61
         <a class="navigation-btn button-style-dark">Más información</a>
     </article>
     </div>
+</div>
 </section>
-
 </main>
 <app-footer></app-footer>
 
