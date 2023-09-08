@@ -1,48 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Bebas+Neue&family=Exo:wght@200;500&family=Gruppo&family=Hind+Siliguri:wght@300&family=Nanum+Gothic:wght@400;700&family=Oswald:wght@200;400&family=Saira+Condensed:wght@200;300&family=Saira:wght@100;200;300;400&family=Titillium+Web:wght@300;400&display=swap');
-
 :root {
     --main-text-color: #f3f3f3;
     --secondary-color: #171717;
     --secondary-color-translucent: #171717e7;
-    /*--header-font-family: 'Bebas Neue';
-    --paragraph-font-family:'Exo';*/
-    /*--header-font-family: 'Gruppo', sans-serif;
-    --paragraph-font-family:'Saira', sans-serif;
-    --alt-font-family:'Bebas Neue', sans-serif;*/
-    /*--header-font-family: 'Bebas Neue', sans-serif;
-    --paragraph-font-family:'Saira', sans-serif;
-    --alt-font-family:'Gruppo', sans-serif;*/
-    /*--header-font-family: 'saira condensed', sans-serif;
-    --paragraph-font-family:'Exo', sans-serif;
-    --alt-font-family:'Gruppo', sans-serif;*/
-    /*--header-font-family: 'saira condensed', sans-serif;
-    --paragraph-font-family:'Saira', sans-serif;
-    --alt-font-family:'Gruppo', sans-serif;*/
-    --header-font-family: 'saira condensed', sans-serif;
-    --paragraph-font-family:'Saira', sans-serif;
-    --alt-font-family:'Exo', sans-serif;
+
+    --header-font-family: 'caviar_dreamsregular', sans-serif;
+    --paragraph-font-family:'louis_george_caferegular', sans-serif;
+    --alt-font-family:'tt_chocolates_trllight', sans-serif;
+
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 24px;
+    font-size: 16px;
     color: var(--main-text-color);
 }
 .heading {
     font-family: var(--header-font-family);
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 2.3;
+    font-weight: 200;
     text-align: center;
 }
-.top h1 {
-    font-size: 4rem;
-    letter-spacing: 12px;
+.landing h1 {
+    font-size: 5rem;
+    letter-spacing: 5px;
 }
 h2 {
-    letter-spacing: 10px;
+    font-weight: 200;
     padding-bottom: 1rem;
-    font-size: 5rem;
+    font-size: 2.5rem;
 }
 h3 {
     letter-spacing: 5px;
@@ -50,8 +36,8 @@ h3 {
 
 p{
     font-family: var(--paragraph-font-family);
-    letter-spacing: 4px;
-    line-height: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 1.4rem;
     font-weight: 300;
 }
 a {
@@ -117,7 +103,7 @@ html {
 
 @media only screen and (max-width: 768px) {
     * {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
