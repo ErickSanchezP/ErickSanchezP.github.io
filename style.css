@@ -6,7 +6,6 @@
     --header-font-family: 'caviar_dreamsregular', sans-serif;
     --paragraph-font-family:'louis_george_caferegular', sans-serif;
     --alt-font-family:'tt_chocolates_trllight', sans-serif;
-
 }
 * {
     margin: 0;
@@ -28,10 +27,11 @@
 h2 {
     font-weight: 200;
     padding-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 h3 {
     letter-spacing: 5px;
+    font-size: 2rem;
 }
 
 p{
@@ -58,7 +58,9 @@ html {
     transform: translateY(50%);
     transition: all 1s;
 }
-
+.tall {
+    height: 100svh;
+}
 .show {
     opacity: 1;
     filter: blur(0);
@@ -112,9 +114,6 @@ html {
 }
 ::-webkit-scrollbar-thumb {
     background: #101010;
-}
-::-webkit-scrollbar-track {
-    opacity: 0%;
 }
 
 .button-style-dark {

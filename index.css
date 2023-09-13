@@ -18,20 +18,19 @@
     }
 }
 
-section {
+/* section {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
+    height: 100svh;
 }
 .scroll-container {
     scroll-snap-align: end;
     width: 100%;
-}
+} */
 
 .landing {
     display: flex;
     flex-flow: column;
-    height: 100svh;
     align-items: center;
     justify-content: flex-end;
 }
@@ -44,7 +43,6 @@ section {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    height: 100svh;
 }
 
 .image-information .information a{
@@ -176,4 +174,23 @@ section {
 .img-grid article h3{
     display: inline;
     padding-top: 20%;
+}
+
+.faq-content {
+    display: none;
+}
+.faq-section {
+    background-color: #171717;
+    padding-top: calc(90px + 1rem);    
+    transition: all 200ms ease;
+}
+
+.faq-section h3 {
+    padding: 1rem 6rem;
+    text-align: start;
+    cursor: pointer;
+}
+.faq-section p {
+    padding: 0 6.5rem 1.5rem;
+
 }

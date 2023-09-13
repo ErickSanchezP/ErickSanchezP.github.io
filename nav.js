@@ -77,3 +77,8 @@ function closeNav() {
   document.getElementById("nvl11").style.transform = `translateX(-${displacement}px)`;
 
 };
+
+function toggleFAQ(id) {
+  var content = document.getElementById(id);
+  content.style.display = content.style.display === 'none' ? 'block' : 'none';
+}
